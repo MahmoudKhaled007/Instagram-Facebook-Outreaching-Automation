@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0GDObUjjRkmHPA8CGIwjbg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="settings/downloads" CVScreenId="14ce628b-39ec-4f30-8799-28066eeed089" DesignTimeRectangle="626, 519, 1182, 24" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;ctrl name='Settings' role='document' /&gt;&lt;ctrl name='Settings' role='grouping' /&gt;&lt;ctrl idx='9' role='grouping' /&gt;" Guid="20203dd1-beb5-4ee4-a72d-ecb472cf4de6" ImageBase64="" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Settings and 1 more page - Personal - Microsoft​ Edge' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="51fb9dc62cebfe26185a28ba6225dd12.png" xmlns="">0UTel9oFwEkugZIW0ruVQ2w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

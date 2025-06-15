@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lKJAouAUjES1VOLkqulSVg" Reference="CnW_Ftgm0kKYIjenwDgUvg/rGQeBuqrP0adb8U7P_AMMQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="facebook.com/messages/t/100334548784236" DesignTimeRectangle="293, 294, 1231, 668" DesignTimeScaleFactor="0.75" FuzzySelectorArgument="&lt;webctrl aria-label='Messages in conversation with Ashton Beasley' aria-role='grid' tag='DIV' type='' class='x1uipg7g xu3j5b3 xol2nv xlauuyb x26u7qi x19p7ews x78zum5 xdt5ytf x1iyjqo2 x6ikm8r x10wlt62' aaname='' /&gt;" Guid="05375eb3-5712-46f7-8ed5-212a096d7f15" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Messenger | Facebook' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a0f19f4783129a346dc4c1fad7fbaa47.png" xmlns="">0fOn43COHykGeA9tJEJe_2A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,661 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "actionSelection&Sequence_2",
+        "dtInstgramInput&Sequence_1",
+        "dtFacbookInput&Sequence_1",
+        "dtConfig&Sequence_2",
+        "config&Sequence_2",
+        "ModelSelection&Sequence_2",
+        "platformSelection&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_comment",
+        "in_message"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "LLM/online Model.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DMprompt&Sequence_5",
+        "strApiUrl&Sequence_5",
+        "strImageUrl&Sequence_5",
+        "strApiKey&Sequence_5",
+        "strPayload&Sequence_5",
+        "strResponseContent&Sequence_5",
+        "desStrResponseContent&Sequence_5",
+        "Username&Sequence_5",
+        "Display_Name&Sequence_5",
+        "Bio&Sequence_5",
+        "FollowerCount&Sequence_5",
+        "ListTitles&Sequence_5",
+        "desResponseMessageValue&Sequence_5",
+        "titlesMatchesCount&Sequence_5",
+        "titleMatchesCounterr&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_username",
+        "out_PersonalizedMesssage",
+        "out_personalizedComment",
+        "In_config",
+        "out_desResponseMessageValue",
+        "In_ImageUrl"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "test http.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "result&Sequence_1",
+        "code&Sequence_1",
+        "DeserializedJsonObject&Sequence_1",
+        "x&Sequence_1",
+        "z&Sequence_1",
+        "response&Sequence_1",
+        "folder&Sequence_1",
+        "out_imageUrl&Sequence_1",
+        "GetTextMessage&Sequence_1",
+        "Out_dtFacbookInput&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Logic/uploadImages.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "out_imageUrl&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "imageName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FacebookFiles/FacbookScreenshotAndSendToLLM(Autosaved).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "MsgCounter&Sequence_1",
+        "ListBoolLimitReached&Sequence_1",
+        "IntProfileIndex&Sequence_1",
+        "Username&Sequence_6",
+        "browser&Sequence_13",
+        "boolPost&Sequence_6",
+        "BoolModelResponded&Sequence_6",
+        "personalizedMessage&Sequence_6",
+        "PostNotFound&Sequence_6",
+        "personalizedComment&Sequence_1",
+        "ImagePostPath&Sequence_6",
+        "imageProfilePath&Sequence_6",
+        "dt_output&Sequence_6",
+        "folder&Sequence_6",
+        "imageUrl&Sequence_6",
+        "model_response&Sequence_6",
+        "randomIdx&Sequence_21"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Action",
+        "in_BoolLocalRun",
+        "in_modelSelection",
+        "In_config",
+        "In_out_dtFacebook"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "InstgramFiles/InstgramScreenshotAndSendToLLM.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "PostImageName&Sequence_1",
+        "ProfileImageName&Sequence_1",
+        "dt_output&Sequence_1",
+        "CurrentUserName&Sequence_1",
+        "privateAccount&Sequence_1",
+        "Str_Post&Sequence_1",
+        "folder&Sequence_9",
+        "imageUrl&Sequence_9",
+        "model_response&Sequence_9",
+        "personalizedComment&Sequence_9",
+        "PersonalizedMesssage&Sequence_9",
+        "ProfileCounter&Sequence_9",
+        "postsCount&Sequence_15",
+        "BoolModelResponded&Sequence_18",
+        "InstgramLogout&Sequence_32"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Action",
+        "in_BoolLocalRun",
+        "in_ModelSelection",
+        "In_config",
+        "In_out_dtInstgram"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Logic/UploadAPI.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ResponseUpload&Sequence_1",
+        "ResponseStatue&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_imageUrl",
+        "in_imagePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "LLM/offline model.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "messagesList&Sequence_1",
+        "capture&Sequence_1",
+        "randomComment&Sequence_1",
+        "rnd&Sequence_1",
+        "comments&Sequence_1",
+        "matches&Sequence_1",
+        "pattern&Sequence_1",
+        "responseText&Sequence_1",
+        "ResponseMessage&Sequence_1",
+        "ResponseStatueMessage&Sequence_1",
+        "DeserializedJsonResponseMessage&Sequence_1",
+        "ResponseComment&Sequence_1",
+        "ResponseStatueComment&Sequence_1",
+        "DeserializedJsonResponseComment&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_PostimagePath",
+        "in_ProfileimagePath",
+        "in_action",
+        "out_BoolModelResponded",
+        "out_comment",
+        "out_message",
+        "in_username"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": ".local/ActivityTestBench/Bench_0.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Logic/ReadInputWorkflow.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtConfig&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Out_dtInstgramInput",
+        "Out_dtFacbookInput",
+        "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FacebookFiles/FacebookLogin.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "BoolFacebookLoggedin&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "FacebookPassword",
+        "StrFacebookUserName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FiverrIG/Home_Page.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "int_MainScrolPage&Sequence_1",
+        "int_ScrollPage&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FiverrIG/Instragram.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Dt_Input&Sequence_1",
+        "Dt_Sample&Sequence_1",
+        "Dt_Final&Sequence_1",
+        "variable2&Sequence_1",
+        "Bool_Element&Sequence_1",
+        "Str_Post&Sequence_1",
+        "outdtcreatetable&Sequence_1",
+        "Str_Status&Sequence_1",
+        "int_PostCounter&Sequence_1",
+        "int_MainCounter&Sequence_1",
+        "int_Main&Sequence_1",
+        "Bool_Mainllike&Sequence_1",
+        "Str_LogMessage&Sequence_1",
+        "Ui&Sequence_1",
+        "variable3&Sequence_6",
+        "Bool_Linking&Sequence_10",
+        "Bool_MessageType&Sequence_10"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FiverrIG/Like_Post.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Bool_LikePost&Sequence_1",
+        "bool_Message&Sequence_1",
+        "Dt_testing&Sequence_1",
+        "MessageMerge&Sequence_1",
+        "NewMessageArr&Sequence_1",
+        "RandNum&Sequence_1",
+        "GetTextMessage&Sequence_1",
+        "Randpost&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Random",
+        "Str_Status",
+        "in_Row",
+        "in_Username",
+        "Name"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FiverrIG/Log Message.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Str_Date&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Message",
+        "in_Date",
+        "in_FileName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FiverrIG/Read_ExcelFile.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Str_LogMessage&Sequence_1",
+        "Str_DateFormat&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_DataInstagram",
+        "out_DataTesting",
+        "out_DtCreateTable"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "InstgramFiles/PostNavigation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "counter&Sequence_2",
+        "Str_Post&Sequence_2",
+        "randomIdx&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Action",
+        "in_comment",
+        "in_message"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FiverrIG/test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "MessageMerge&Sequence_1",
+        "mesage&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_UserName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FiverrIG/Dashboard.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FiverrIG/Excel.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "int_RowCounter&Sequence_1",
+        "datatable&Sequence_1",
+        "int_Random&Sequence_1",
+        "int_Number&Sequence_1",
+        "Str_Status&Sequence_1",
+        "find_Cell&Sequence_1",
+        "Bool_Pop&Sequence_1",
+        "Str_Cell&Sequence_1",
+        "Str_Posts&Sequence_1",
+        "str_url&Sequence_1",
+        "Bool_Like&Sequence_1",
+        "int_Mainpage&Sequence_1",
+        "int_MainCounterRandom&Sequence_1",
+        "Dt_Testing&Sequence_1",
+        "Randpost&Sequence_1",
+        "Bool_main&Sequence_46"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "InstgramFiles/InstgramLogin.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "BoolInstgramLoggedin&Sequence_2",
+        "StrInstgramUserName&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_StrInstgramUserName",
+        "In_SecureInstgramPassword"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "InstgramFiles/InstgramLogout.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_Logout"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FiverrIG/Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Str_DateFormat&Sequence_1",
+        "Str_LogMessage&Sequence_1",
+        "Str_FileName&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FiverrIG/ScrollDown.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "scroll&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "InstgramFiles/InstgramHomeLikes.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "scroll&Sequence_7",
+        "Bool_LikePost&Sequence_2",
+        "intLikedPosts&Sequence_1",
+        "intRandPost&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FacebookSendCommentToPages.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "BoolModelResponded&Sequence_3",
+        "folder&Sequence_3",
+        "comment&Sequence_3",
+        "randomIdx&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Username",
+        "In_config",
+        "in_ImagePath",
+        "in_url"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FacebookSendMessageToFBFriend.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "linkurl&Sequence_1",
+        "Name&Sequence_1",
+        "datatable&Sequence_1",
+        "FirstText&Sequence_1",
+        "NewMessageArr&Sequence_1",
+        "GetTextMessage&Sequence_1",
+        "AlreadyTalkedArr&Sequence_1",
+        "RandNum&Sequence_1",
+        "NoFeed&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FacebookFiles/FacebookSendMessageToPages.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "PostNo&Sequence_29",
+        "randomIdx&Sequence_30",
+        "counter&Sequence_30",
+        "GetTextMessage&Sequence_30",
+        "LastSender&Sequence_30",
+        "datatable&Sequence_1",
+        "Name&Sequence_1",
+        "linkurl&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_CurrentUserName",
+        "in_CurrentUrl"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "InstgramFiles/CheckInstgramReplies.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Text&Sequence_2",
+        "messages&Sequence_2",
+        "LastMessageSender&Sequence_2",
+        "LastmessageContent&Sequence_2",
+        "BoolReplyFound&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_username",
+        "out_LastMessageContentReply"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FacebookScrollDown.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "scroll&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Logic/TakeScreenshot.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "folder&Sequence_1",
+        "imagePath&Sequence_8",
+        "imagePath&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_post",
+        "in_InstgramFacebookSelection",
+        "in_url",
+        "in_imageName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "InstgramFiles/SendMessageToInstgramProfile.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "bool_Message&Sequence_1",
+        "GetTextMessage&Sequence_1",
+        "privateAccount&Sequence_1",
+        "notfound&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_username",
+        "in_message"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "LLM/ProfileDMOfflineModel.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "variable1&Sequence_1",
+        "base64Image&Sequence_1",
+        "jsonBody&Sequence_1",
+        "DeserializedJsonResponseComment&Sequence_1",
+        "ResponseStatueComment&Sequence_1",
+        "ResponseComment&Sequence_1",
+        "DeserializedJsonResponseMessage&Sequence_1",
+        "ResponseStatueMessage&Sequence_1",
+        "ResponseMessage&Sequence_1",
+        "responseText&Sequence_1",
+        "pattern&Sequence_1",
+        "matches&Sequence_1",
+        "capture&Sequence_1",
+        "messagesList&Sequence_1",
+        "rnd&Sequence_1",
+        "ResponseStatueComment&Sequence_1",
+        "DeserializedJsonResponseMessage&Sequence_1",
+        "responseText&Sequence_1",
+        "pattern&Sequence_1",
+        "rnd&Sequence_1",
+        "capture&Sequence_1",
+        "messagesList&Sequence_1",
+        "matches&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "LLM/PostCommentOfflineModel.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "base64Image&Sequence_1",
+        "jsonBody&Sequence_1",
+        "DeserializedJsonResponseComment&Sequence_1",
+        "ResponseStatueComment&Sequence_1",
+        "ResponseComment&Sequence_1",
+        "DeserializedJsonResponseMessage&Sequence_1",
+        "ResponseStatueMessage&Sequence_1",
+        "ResponseMessage&Sequence_1",
+        "responseText&Sequence_1",
+        "matches&Sequence_1",
+        "rnd&Sequence_1",
+        "capture&Sequence_1",
+        "messagesList&Sequence_1",
+        "pattern&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Logic/InitApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": null,
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Logic/Action - ProfileSwitching.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": null,
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "FacebookFiles/FacebookCommentSequence.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "BoolLikedDone_2&Sequence_1",
+        "BoolLikedDone_1&Sequence_1",
+        "BoolReelFound&Sequence_1",
+        "BoolHoursFound&Sequence_1",
+        "BoolMinutesFound&Sequence_1",
+        "BoolDaysFound&Sequence_1",
+        "Bool2025DateFound&Sequence_1",
+        "randomIdx&Sequence_1",
+        "model_response&Sequence_1",
+        "imageUrl&Sequence_1",
+        "folder&Sequence_1",
+        "dt_output&Sequence_1",
+        "imageProfilePath&Sequence_1",
+        "ImagePostPath&Sequence_1",
+        "PostNotFound&Sequence_1",
+        "BoolModelResponded&Sequence_1",
+        "boolPost&Sequence_1",
+        "browser&Sequence_1",
+        "Username&Sequence_1",
+        "personalizedMessage&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}

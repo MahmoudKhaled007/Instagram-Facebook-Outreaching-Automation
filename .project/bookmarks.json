@@ -1,0 +1,37 @@
+{
+  "Value": {
+    "FacebookFiles/FacebookSendMessageToPages.xaml": [
+      {
+        "IsEnabled": true,
+        "Annotation": null,
+        "Id": "5d693c6e-7d62-4514-9724-93e94622bba9",
+        "ActivityIdRef": "CommentOut_2",
+        "ActivityId": "1.36",
+        "ActivityName": "Comment Out",
+        "IsTransient": false
+      }
+    ],
+    "InstgramFiles/PostNavigation.xaml": [
+      {
+        "IsEnabled": true,
+        "Annotation": null,
+        "Id": "f7076a5d-faf4-476d-b793-e5d01136a057",
+        "ActivityIdRef": "GoBack_1",
+        "ActivityId": "1.18",
+        "ActivityName": "Go Back",
+        "IsTransient": false
+      }
+    ],
+    "FacebookFiles/FacebookCommentSequence.xaml": [
+      {
+        "IsEnabled": true,
+        "Annotation": null,
+        "Id": "56872750-3684-4196-8321-7f9de8947ffb",
+        "ActivityIdRef": "Assign_1",
+        "ActivityId": "1.23",
+        "ActivityName": "Assign",
+        "IsTransient": false
+      }
+    ]
+  }
+}

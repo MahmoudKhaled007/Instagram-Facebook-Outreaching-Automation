@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="cd9VtwJeLUuybmJgr1zaZg" Reference="CnW_Ftgm0kKYIjenwDgUvg/VMLWA7wQ_0GjbJw50BrDNQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="facebook.com/messages/e2ee/t/8496152673771284" DesignTimeRectangle="395, 971, 1096, 27" DesignTimeScaleFactor="0.75" FuzzySelectorArgument="&lt;webctrl type='' class='x78zum5' tag='DIV' aaname='' check:innerText='Aa' /&gt;" Guid="fb4e0878-9a55-4396-94fa-65262cd57d16" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) Messenger | Facebook' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="368, 975, 20, 17" ElementType="Icon" Guid="83ecd67b-5ed4-4b33-9b35-6b4c23cbc345" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABMAAAARCAYAAAA/mJfHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADqSURBVDhPrZMhDgIxEEVrEBgEAoPAABKNBI1FkaCxGI7BObgH5+Ac2CVvk0+m02mzCYifbts/rzPTblqu1t2/lPzCL6rCFptdVd5bhU2Ojy5d302NLq/e58EZbHx+FoEt4Q9hs/2tMA/RfHsqYSqPEgBTwvRw7+dkwFzB6h3reEMYgXxjxEQgAUDVBkbmOkh7Gcye4kvxMA5Wf6swMkGCEKQsLEzZN2HqlW0u8jB761WY7RkmxggWtSCDscgmQN0Yox6ovm0bUHib3jRU9i/4wvRuvLklMlZ8BhOQcltQPWLbqxDmwZG8z+oDvcVKhEZo0FcAAAAASUVORK5CYII=" SearchSteps="Image" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c1266567e574c0ad5d467590a17233f1.png" xmlns="">0jGP8TAZTtEmUEuZM-P7XdQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

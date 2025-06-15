@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JQtvzykD6E6edxzDjr-TyA" Reference="CnW_Ftgm0kKYIjenwDgUvg/z0IdqHnq00SxkZH6bbvJIA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="facebook.com/artsysilver.co" DesignTimeRectangle="1290, 657, 45, 15" DesignTimeScaleFactor="0.75" FuzzySelectorArgument="&lt;webctrl aaname='Message' tag='SPAN' type='' class='x1lliihq x6ikm8r x10wlt62 x1n2onr6 xlyipyv xuxw1ft' check:innerText='Message' /&gt;" Guid="b7b4e386-066f-4b38-8b7b-e155e6a7d2ca" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) Facebook' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="1273, 658, 12, 12" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl src='https://static.xx.fbcdn.net/rsrc.php/v4/y9/r/YjBUcSAL8TC.png?_nc_eui2=AeFsYdZuZnrKd9FfnutXswAAeJ9fK8EsoyB4n18rwSyjIMSl4BMaBOLPoz1NjnsbU-LUGMV3pf15swKMfjz4CVDt' tag='IMG' type='' class='x1b0d499 xaj1gnb' aaname='' /&gt;" Guid="152dfe76-47a2-4b08-9cbb-ec951fbda828" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e543009413bfaa88bd59a0329758f3f3.png" xmlns="">0maiQKIVqKEOrupJf7XIgSQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

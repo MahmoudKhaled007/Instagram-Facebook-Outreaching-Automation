@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PlysP9YifUCMoB9exdkGiA" Reference="CnW_Ftgm0kKYIjenwDgUvg/2BvEWVivC0uxRxbGNR3f-Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="newtab" DesignTimeRectangle="1745, 107, 50, 41" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Screenshot' role='document' /&gt;&lt;ctrl name='Toolbar' role='pane' /&gt;&lt;ctrl name='Save' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Screenshot' role='document' /&gt;&lt;ctrl name='Toolbar' role='pane' /&gt;&lt;ctrl name='Save' role='push button' automationid='' /&gt;" Guid="5118637f-2fcb-47c7-9eb3-793bc629b750" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='New tab - Profile 1 - Microsoft​ Edge' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="1805, 107, 50, 41" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Screenshot' role='document' /&gt;&lt;ctrl name='Toolbar' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Screenshot' role='document' /&gt;&lt;ctrl name='Toolbar' role='pane' /&gt;&lt;ctrl name='Close' role='push button' automationid='' /&gt;" Guid="5a2e8f30-28fa-41e7-8d4f-248bf740e0fb" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="11b7346729f3289048f1011f89411ec5.png" xmlns="">0MQKgRSVD-ECfzD_hr3-VYA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

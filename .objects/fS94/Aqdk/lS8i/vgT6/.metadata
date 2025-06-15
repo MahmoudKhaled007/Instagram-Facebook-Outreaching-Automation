@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Follow",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "vgT6MyibIkGvVmXjEQi7PA",
+  "Reference": "CnW_Ftgm0kKYIjenwDgUvg/vgT6MyibIkGvVmXjEQi7PA",
+  "ParentRef": "CnW_Ftgm0kKYIjenwDgUvg/lS8izwPA5EWHTfSW2KPOvg",
+  "Created": "2025-05-14T20:48:08.9405623Z",
+  "Updated": "2025-05-14T20:48:08.9405623Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

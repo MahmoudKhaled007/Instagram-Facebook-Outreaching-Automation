@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tBFM1hEK1U22N0C82YOXdQ" Reference="CnW_Ftgm0kKYIjenwDgUvg/Nq8cscPfJ06gQ_RVyuP6BA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="instagram.com/travland82" CVScreenId="e3ec93b5-e5ba-45b8-b02d-5ea0593461b4" CvTextArea="531, 23, 25, 24" CvTextArgument="+" CvType="Text" DesignTimeRectangle="377, 6, 189, 40" DesignTimeScaleFactor="1.25" ElementType="RadioButton" FullSelectorArgument="&lt;ctrl name='Capture full page' role='radio button' /&gt;" FuzzyAccuracy="0.6" FuzzySelectorArgument="&lt;ctrl name='Capture full page' role='radio button' automationid='' check:text='Capture full page' /&gt;" Guid="9e6a4be8-af67-4ca9-a8d7-ec9c398be13a" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_*' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="44ceaeff-fc47-4a4d-9eac-81a911252d74" CvElementArea="732, 36, 37, 36" CvType="CloseButton" DesignTimeRectangle="577, 6, 30, 40" ElementType="Button" FullSelectorArgument="&lt;ctrl idx='2' name='Close' role='push button' /&gt;" FuzzyAccuracy="0.61" FuzzySelectorArgument="&lt;ctrl automationid='' name='Close' role='push button' check:fulltext='Close' /&gt;" Guid="14c3cf7d-f257-44d1-a700-8592d9d9f992" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="92db65ff1a0ce96c7e7d9fad07e173ed.png" xmlns="">0wS3De82AH0-TFoeYOnsM-w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="b97nP8XB4kizvqEqnx7etw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Settings and 1 more page - Personal - Microsoft​ Edge' /&gt;" Url="settings/downloads" />
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

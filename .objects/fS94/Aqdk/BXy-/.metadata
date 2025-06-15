@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Travis Sandland (@travland82) • Instagra",
+  "Type": "Screen",
+  "Id": "BXy-D7liMUq7h6NCnyEyjA",
+  "Reference": "CnW_Ftgm0kKYIjenwDgUvg/BXy-D7liMUq7h6NCnyEyjA",
+  "ParentRef": "CnW_Ftgm0kKYIjenwDgUvg/AqdkjSpah0qmUB1C8nMeEg",
+  "Created": "2025-05-04T14:19:30.8009865Z",
+  "Updated": "2025-05-04T14:19:30.8009865Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

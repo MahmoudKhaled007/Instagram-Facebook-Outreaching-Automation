@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Command Prompt - ollama  run gemma312B ",
+  "Type": "Screen",
+  "Id": "Jzl7S3MEDkWO9sCUIlEk9g",
+  "Reference": "CnW_Ftgm0kKYIjenwDgUvg/Jzl7S3MEDkWO9sCUIlEk9g",
+  "ParentRef": "CnW_Ftgm0kKYIjenwDgUvg/XYNvNVSP9UqCGlgg8mkUXA",
+  "Created": "2025-05-13T20:06:47.5295069Z",
+  "Updated": "2025-05-13T20:06:47.5295069Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

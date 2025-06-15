@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Command Prompt - ollama  run gemma312B ",
+  "Type": "App",
+  "Id": "4CV1cd2LYkeQcdeGe4IeFA",
+  "Reference": "CnW_Ftgm0kKYIjenwDgUvg/4CV1cd2LYkeQcdeGe4IeFA",
+  "Created": "2025-05-13T20:06:47.4594876Z",
+  "Updated": "2025-05-13T20:06:47.4594876Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

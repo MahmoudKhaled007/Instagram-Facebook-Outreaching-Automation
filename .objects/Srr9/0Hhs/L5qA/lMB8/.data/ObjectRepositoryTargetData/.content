@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Nms52dzZAUKVV1CFIo6kiw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="facebook.com/messages/t/103990451336348" DesignTimeRectangle="843, 927, 97, 30" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Get started' aria-role='button' tag='DIV' /&gt;" Guid="49176845-4e66-421e-bd31-e5f51a8a2587" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) Messenger | Facebook' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="395, 891, 993, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Tap to send' tag='SPAN' /&gt;" Guid="5a3495c4-3ec0-4cdf-abb4-a491848d75ba" ImageBase64="" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3603bc3371c5a31ca02cac228a844cbe.png" xmlns="">0cqFNgwbIsUC3H1Zdt1x-8A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

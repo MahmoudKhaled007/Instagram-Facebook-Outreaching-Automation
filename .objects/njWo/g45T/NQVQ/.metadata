@@ -1,0 +1,13 @@
+﻿{
+  "Name": "ixBrowser  v2.4.15",
+  "Type": "Screen",
+  "Id": "NQVQdtzdXkeeiQO1dnKNeQ",
+  "Reference": "CnW_Ftgm0kKYIjenwDgUvg/NQVQdtzdXkeeiQO1dnKNeQ",
+  "ParentRef": "CnW_Ftgm0kKYIjenwDgUvg/g45TVN5R90KX5WBqRpv_6A",
+  "Created": "2025-05-12T23:52:02.1277003Z",
+  "Updated": "2025-05-12T23:52:02.1277003Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

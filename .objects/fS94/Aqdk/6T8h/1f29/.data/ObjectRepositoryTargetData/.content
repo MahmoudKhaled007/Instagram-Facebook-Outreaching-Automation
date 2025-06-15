@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="J29zY_KtVUWgpQF8I_YVug" Reference="CnW_Ftgm0kKYIjenwDgUvg/1f29HMqKFE6D7pp-EazmFg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="newtab" DesignTimeRectangle="133, 115, 82, 27" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Downloads' role='document' /&gt;&lt;ctrl name='What do you want to do with*' role='outline item' /&gt;&lt;ctrl name='Save as' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Downloads' role='document' /&gt;&lt;ctrl name='What do you want to do with*' role='outline item' /&gt;&lt;ctrl name='Save as' role='push button' automationid='' check:fulltext='Save as' /&gt;" Guid="3168fd03-1612-4f1a-aa2d-3192e656fb2f" ImageBase64="" ScopeSelectorArgument="&lt;wnd aaname='Downloads' app='msedge.exe' cls='Chrome_WidgetWin_2' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="55, 70, 306, 40" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Downloads' role='document' /&gt;&lt;ctrl name='What do you want to do with*' role='outline item' /&gt;&lt;ctrl name='What do you want to do with*' role='text' /&gt;" Guid="ab3d2f1a-47b3-42f0-b7e1-f6d3a0409cf1" ImageBase64="" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="de8804e729a69579965da5f7d1c2bcf3.png" xmlns="">0ggzZ_CYD4EyfEDk_Xb3c3A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

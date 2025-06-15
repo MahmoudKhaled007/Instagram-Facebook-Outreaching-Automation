@@ -1,0 +1,12 @@
+﻿{
+  "Name": "ixBrowser  v2.4.15",
+  "Type": "App",
+  "Id": "njWosjKVVkCPVa6HwvMs5A",
+  "Reference": "CnW_Ftgm0kKYIjenwDgUvg/njWosjKVVkCPVa6HwvMs5A",
+  "Created": "2025-05-12T23:52:02.064176Z",
+  "Updated": "2025-05-12T23:52:02.064176Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

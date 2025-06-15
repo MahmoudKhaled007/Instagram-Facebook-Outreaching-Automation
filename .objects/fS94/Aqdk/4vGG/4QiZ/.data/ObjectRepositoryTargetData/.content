@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yU2wXs-cGk6B2wrsqXxU5g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="web.facebook.com/photo" DesignTimeRectangle="1584, 247, 328, 40" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' isleaf='1' tag='SPAN' /&gt;" Guid="7972873e-a112-4070-aa8e-7fee4c4c9265" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Facebook' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1882, 208, 24, 24" ElementType="Button" Guid="dfa2d7bd-cf44-44be-96f6-ca350a496a82" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABeSURBVEhLY1BV1/hPS8yALkBtPGoBQTxqAUE8DC3w8PL5P3/RMjAGsckVx2lB74Qp/zds3gHGIE3kihNlAYhNrjhOC0DeBClE9zKp4jgtoDYetYAgHrWAIB61gCAGAIrVe/owjFZBAAAAAElFTkSuQmCC" SearchSteps="Image" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0cce2694b7b07cdb948d00058a8f24d8.png" xmlns="">0UbXtL5EHskK33v-dqG8bYg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

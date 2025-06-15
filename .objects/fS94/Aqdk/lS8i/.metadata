@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge (1) Facebook",
+  "Type": "Screen",
+  "Id": "lS8izwPA5EWHTfSW2KPOvg",
+  "Reference": "CnW_Ftgm0kKYIjenwDgUvg/lS8izwPA5EWHTfSW2KPOvg",
+  "ParentRef": "CnW_Ftgm0kKYIjenwDgUvg/AqdkjSpah0qmUB1C8nMeEg",
+  "Created": "2025-05-14T20:46:10.5537264Z",
+  "Updated": "2025-05-14T20:46:10.5537264Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

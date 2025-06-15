@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome (1) Facebook(1)",
+  "Type": "Screen",
+  "Id": "nKVviFEcZEONz4PnGuk8pw",
+  "Reference": "CnW_Ftgm0kKYIjenwDgUvg/nKVviFEcZEONz4PnGuk8pw",
+  "ParentRef": "CnW_Ftgm0kKYIjenwDgUvg/AqdkjSpah0qmUB1C8nMeEg",
+  "Created": "2025-05-20T12:06:41.7431575Z",
+  "Updated": "2025-05-20T12:06:41.7431575Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

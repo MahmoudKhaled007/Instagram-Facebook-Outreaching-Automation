@@ -1,0 +1,14 @@
+﻿{
+  "Name": "MorePostsAboutMentionsR…",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "VdiGMfHE3EiHuv4R9-MnSA",
+  "Reference": "CnW_Ftgm0kKYIjenwDgUvg/VdiGMfHE3EiHuv4R9-MnSA",
+  "ParentRef": "CnW_Ftgm0kKYIjenwDgUvg/L5qAMtNJ9UuC3HY7MXUUgQ",
+  "Created": "2025-05-15T19:10:29.0793886Z",
+  "Updated": "2025-05-15T19:10:29.0793886Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

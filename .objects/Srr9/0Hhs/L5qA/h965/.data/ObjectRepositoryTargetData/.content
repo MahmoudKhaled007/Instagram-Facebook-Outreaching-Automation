@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9xXxwV_rAEa2hN2WlvEK7A" Reference="CnW_Ftgm0kKYIjenwDgUvg/h965l6vc-Uascv1yWXfQVA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="facebook.com/artsysilver.co" DesignTimeRectangle="1403, 705, 99, 15" DesignTimeScaleFactor="0.75" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Open in Messenger' tag='SPAN' type='' class='x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xk50ysn xzsf02u x1yc453h' check:innerText='Open in Messenger' /&gt;" Guid="22da3317-f6de-48e8-bd1e-aea2efd47bd9" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) Facebook' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1379, 706, 15, 15" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='xfx01vb x1lliihq x1tzjh5l x1k90msu x2h7rmj x1qfuztq' aaname='' /&gt;" Guid="7b829803-d19e-4eef-8187-6580074c12a5" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d3ca3dbd422215fca3af48f69a668d02.png" xmlns="">0xryCgUtdUUGWh1CtSikSBQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Capture full page",
+  "Type": "Element",
+  "TaxonomyType": "RadioButton",
+  "Id": "Nq8cscPfJ06gQ_RVyuP6BA",
+  "Reference": "CnW_Ftgm0kKYIjenwDgUvg/Nq8cscPfJ06gQ_RVyuP6BA",
+  "ParentRef": "CnW_Ftgm0kKYIjenwDgUvg/6T8hIC9tTEqO7_6R5KKdCw",
+  "Created": "2025-05-04T14:20:22.8171446Z",
+  "Updated": "2025-05-04T14:20:22.8171446Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

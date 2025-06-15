@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="c4DwD5Ml9UCb6zbxN1n-oA" Reference="CnW_Ftgm0kKYIjenwDgUvg/refpIX1rAkOS0oYuxYlw8A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="facebook.com/profile.php" DesignTimeRectangle="1141, 653, 37, 20" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl aaname='Done' type='' tag='SPAN' class='x1lliihq x6ikm8r x10wlt62 x1n2onr6 xlyipyv xuxw1ft' check:innerText='Done' /&gt;" Guid="fd05ca85-6d51-4482-a810-bfc9011d248a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(1) Facebook' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1046, 653, 34, 20" FuzzySelectorArgument="&lt;webctrl aaname='Clear' tag='SPAN' type='' class='x1lliihq x6ikm8r x10wlt62 x1n2onr6 xlyipyv xuxw1ft' check:innerText='Clear' /&gt;" Guid="dd1a95cf-1153-40a6-a61a-ba6395ef9209" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c54b58af39f0e9b57e120ba5b88e8c16.png" xmlns="">0hCskIVDd40WgzD3RoMf5cQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

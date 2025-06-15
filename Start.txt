@@ -1,0 +1,3 @@
+python -m venv llama_env
+source llama_env/bin/activate  # On Windows: llama_env\Scripts\activate
+llama_env\Scripts\activate

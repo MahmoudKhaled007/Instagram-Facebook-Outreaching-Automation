@@ -1,0 +1,13 @@
+﻿{
+  "Name": "ARTSY SILVERTypically r…",
+  "Type": "Element",
+  "Id": "rGQeBuqrP0adb8U7P_AMMQ",
+  "Reference": "CnW_Ftgm0kKYIjenwDgUvg/rGQeBuqrP0adb8U7P_AMMQ",
+  "ParentRef": "CnW_Ftgm0kKYIjenwDgUvg/L5qAMtNJ9UuC3HY7MXUUgQ",
+  "Created": "2025-05-15T19:16:07.2607271Z",
+  "Updated": "2025-05-15T19:16:07.2607271Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

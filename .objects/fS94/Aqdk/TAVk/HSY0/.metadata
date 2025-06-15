@@ -1,0 +1,13 @@
+﻿{
+  "Name": "CUsersamigoDownloads",
+  "Type": "Element",
+  "Id": "HSY0n15BfESXirm0D5pJkQ",
+  "Reference": "CnW_Ftgm0kKYIjenwDgUvg/HSY0n15BfESXirm0D5pJkQ",
+  "ParentRef": "CnW_Ftgm0kKYIjenwDgUvg/TAVkjrSrOkOm7iHRaO6sNg",
+  "Created": "2025-05-04T11:20:40.1926888Z",
+  "Updated": "2025-05-04T11:20:40.1926888Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

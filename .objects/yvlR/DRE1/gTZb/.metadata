@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Facebook",
+  "Type": "Screen",
+  "Id": "gTZbwyW1v0CjeeMJVoeWFA",
+  "Reference": "CnW_Ftgm0kKYIjenwDgUvg/gTZbwyW1v0CjeeMJVoeWFA",
+  "ParentRef": "CnW_Ftgm0kKYIjenwDgUvg/DRE1qC8ZOEOCbKIhiSMVhg",
+  "Created": "2025-05-15T17:00:42.1495282Z",
+  "Updated": "2025-05-15T17:00:42.1495282Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

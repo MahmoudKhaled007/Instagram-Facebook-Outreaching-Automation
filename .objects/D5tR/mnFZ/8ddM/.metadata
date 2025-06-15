@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Settings",
+  "Type": "Screen",
+  "Id": "8ddM7nt1GEysPeddYXDbSg",
+  "Reference": "CnW_Ftgm0kKYIjenwDgUvg/8ddM7nt1GEysPeddYXDbSg",
+  "ParentRef": "CnW_Ftgm0kKYIjenwDgUvg/mnFZm8bxKkOUCwWDwu__Jw",
+  "Created": "2025-05-04T11:19:21.3564209Z",
+  "Updated": "2025-05-04T11:19:21.3564209Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

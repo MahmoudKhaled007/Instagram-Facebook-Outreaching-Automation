@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Get started",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "lMB8w_T3RUG7vWHIvCgAbA",
+  "Reference": "CnW_Ftgm0kKYIjenwDgUvg/lMB8w_T3RUG7vWHIvCgAbA",
+  "ParentRef": "CnW_Ftgm0kKYIjenwDgUvg/L5qAMtNJ9UuC3HY7MXUUgQ",
+  "Created": "2025-05-15T19:31:56.2124966Z",
+  "Updated": "2025-05-15T19:31:56.2124966Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,265 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="InstgramLogin" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="In_StrInstgramUserName" Type="InArgument(x:String)" />
+    <x:Property Name="In_SecureInstgramPassword" Type="InArgument(ss:SecureString)" />
+  </x:Members>
+  <this:InstgramLogin.In_StrInstgramUserName>
+    <InArgument x:TypeArguments="x:String" />
+  </this:InstgramLogin.In_StrInstgramUserName>
+  <this:InstgramLogin.In_SecureInstgramPassword>
+    <InArgument x:TypeArguments="ss:SecureString" />
+  </this:InstgramLogin.In_SecureInstgramPassword>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>InstgramLogin_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="InstgramLogin" sap:VirtualizedContainerService.HintSize="1267,2713" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Login to Instgram Started&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488,2351" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Instagram" sap:VirtualizedContainerService.HintSize="486,1839" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="50ac303a-04f7-415c-9177-8506d23c1a5d" Version="V2" WindowResize="Maximize">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,1582" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:Boolean" Name="BoolInstgramLoggedin" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:UiElementExists DisplayName="Element Exists 'I'" Exists="[BoolInstgramLoggedin]" sap:VirtualizedContainerService.HintSize="418,139" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                  <ui:UiElementExists.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6c2c34bc-77ce-4520-a532-9ce8bbf1aca6" InformativeScreenshot="09f13563edab384b8d2f9047c1ea6cdf" Selector="&lt;webctrl aaname='Home' tag='SPAN' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:UiElementExists.Target>
+                </ui:UiElementExists>
+                <If Condition="[BoolInstgramLoggedin]" sap:VirtualizedContainerService.HintSize="418,1381" sap2010:WorkflowViewState.IdRef="If_1">
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="StrInstgramUserName" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Instgram Already Logged in&quot;]" />
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,1024" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Facebook Already Not Logged in will log in&quot;]" />
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Phone number, username,…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="50ac303a-04f7-415c-9177-8506d23c1a5d" Text="[In_StrInstgramUserName]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="instagram.com" ContentHash="eYZBZiPyLkOup2JIMhnpzQ" DesignTimeRectangle="1127, 409, 252, 36" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' aaname='Phone number, username, or email' check:innerText='Phone number, username, or email' /&gt;" Guid="91f692d0-4908-4e50-9953-a23ef26994cd" ImageBase64="" InformativeScreenshot="5138db7013c23d0795b5cd49688a9663.png" Reference="1-ceVjT-XkelpwDR62qTEQ/BSsj__T1WEmwk8skZ1tUiw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="50ac303a-04f7-415c-9177-8506d23c1a5d" SecureText="[In_SecureInstgramPassword]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="instagram.com" ContentHash="s2HsVqIUOU-xJ1yW4r6Ogg" DesignTimeRectangle="1127, 453, 252, 36" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='SPAN' type='' check:innerText='Password' /&gt;" Guid="945bd549-8398-4e1f-8945-5921da687264" ImageBase64="" InformativeScreenshot="05ceec8cc044d20c7d7f6bfe3e4201a4.png" Reference="1-ceVjT-XkelpwDR62qTEQ/Y6He8fCvm0SM58WRik_UEA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log in'" sap:VirtualizedContainerService.HintSize="382.4,216.8" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="50ac303a-04f7-415c-9177-8506d23c1a5d" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="instagram.com" ContentHash="OXc9RO2t5kOSpWKEyFPm5g" DesignTimeRectangle="1118, 504, 270, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='DIV' innertext='Log in' visibleinnertext='Log in' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' innertext='Log in' visibleinnertext='Log in' type='' class='x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1xmf6yo x1e56ztr x540dpk x1m39q7l x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1' aaname='' check:text='Log in' /&gt;" Guid="8ed6382a-e752-4703-9b47-c7205a13e5e3" ImageBase64="" InformativeScreenshot="bbecae9e1bcd512d1acdb900b1bdc2f5.png" Reference="1-ceVjT-XkelpwDR62qTEQ/HXlUQY4st0aOsdrAiveZiQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" ContentHash="s6DxbCwZcE-6AyQKoEN-MQ" IconBase64="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" InformativeScreenshot="bd863208ea8f03efb8936bb9889803e8.jpg" Reference="1-ceVjT-XkelpwDR62qTEQ/-g6Hm2-pWEKp42BjeCwSJQ" Selector="&lt;html app='chrome.exe' title='Instagram' /&gt;" Title="Instagram" Url="https://www.instagram.com/" Version="V1" />
+          </uix:NApplicationCard.TargetApp>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </uix:NApplicationCard>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486,226" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Error" Message="[&quot;while log in to Instgram error occured :&quot;+exception.Message]" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="484.8,89.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </TryCatch.Finally>
+    </TryCatch>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486.4,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Login to Instgram Ended&quot;]" />
+  </Sequence>
+</Activity>

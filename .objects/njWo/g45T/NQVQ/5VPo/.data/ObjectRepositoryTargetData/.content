@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tubU5NfY_kKlwCXOO6qrMQ" Reference="CnW_Ftgm0kKYIjenwDgUvg/5VPoUOnAKU-QABa6DIlbag" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="3d07abcd-a892-4edf-88d6-690efc9719dd" CvElementArea="1526, 432, 98, 49" CvTextArea="1551, 445, 46, 21" CvTextArgument="Open" CvType="Button" DesignTimeRectangle="1528, 430, 93, 49" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;ctrl name='ixBrowser | v2.4.15' role='document' /&gt;&lt;ctrl idx='7' role='row' /&gt;&lt;ctrl name='Open' role='cell' /&gt;&lt;ctrl name='Open' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ixBrowser | v2.4.15' role='document' /&gt;&lt;ctrl role='row' /&gt;&lt;ctrl name='Open' role='cell' /&gt;&lt;ctrl name='Open' role='push button' automationid='' check:text='Open' /&gt;" Guid="860b05cd-d380-4730-9db3-c0522d04cf54" ScopeSelectorArgument="&lt;wnd app='ixbrowser.exe' cls='Chrome_WidgetWin_1' title='ixBrowser | v2.4.15' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b65b1b8d456b386cb2409b5c96006243.png" xmlns="">0nXRSdNJ4wEGHGFXVxA5nYw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

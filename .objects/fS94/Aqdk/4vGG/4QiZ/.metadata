@@ -1,0 +1,14 @@
+﻿{
+  "Name": "I’m irrationally excite…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "4QiZmcR1LESayahhhDc13g",
+  "Reference": "CnW_Ftgm0kKYIjenwDgUvg/4QiZmcR1LESayahhhDc13g",
+  "ParentRef": "CnW_Ftgm0kKYIjenwDgUvg/4vGGTjxysEqMjZ6lkceQGg",
+  "Created": "2025-05-18T14:22:04.5113862Z",
+  "Updated": "2025-05-18T14:22:04.5113862Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

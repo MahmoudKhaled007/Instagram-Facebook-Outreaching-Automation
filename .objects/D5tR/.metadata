@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge Settings",
+  "Type": "App",
+  "Id": "D5tR0QPtuUy0msebX4JPOw",
+  "Reference": "CnW_Ftgm0kKYIjenwDgUvg/D5tR0QPtuUy0msebX4JPOw",
+  "Created": "2025-05-04T11:19:21.3085048Z",
+  "Updated": "2025-05-04T11:19:21.3085048Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

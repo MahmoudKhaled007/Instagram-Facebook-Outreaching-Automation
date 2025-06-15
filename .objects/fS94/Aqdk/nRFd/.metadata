@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Facebook",
+  "Type": "Screen",
+  "Id": "nRFdvQjrWUSWRecb4FrliA",
+  "Reference": "CnW_Ftgm0kKYIjenwDgUvg/nRFdvQjrWUSWRecb4FrliA",
+  "ParentRef": "CnW_Ftgm0kKYIjenwDgUvg/AqdkjSpah0qmUB1C8nMeEg",
+  "Created": "2025-05-15T17:01:07.3362385Z",
+  "Updated": "2025-05-15T17:01:07.3362385Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
