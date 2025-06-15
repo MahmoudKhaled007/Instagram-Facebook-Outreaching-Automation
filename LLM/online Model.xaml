@@ -1,9 +1,10 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="online_Model" this:online_Model.in_apiKeyCounter="1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
+    <x:Property Name="In_CommentImageUrl" Type="InArgument(x:String)" />
     <x:Property Name="in_Action" Type="InArgument(x:String)" />
     <x:Property Name="In_config" Type="InArgument(scg:Dictionary(x:String, x:String))" />
     <x:Property Name="out_desResponseMessageValue" Type="OutArgument(x:String)" />
-    <x:Property Name="In_ImageUrl" Type="InArgument(x:String)" />
+    <x:Property Name="In_DMImageUrl" Type="InArgument(x:String)" />
     <x:Property Name="out_personalizedComment" Type="OutArgument(x:String)" />
     <x:Property Name="out_PersonalizedMesssage" Type="OutArgument(x:String)" />
     <x:Property Name="in_username" Type="InArgument(x:String)" />
@@ -122,15 +123,15 @@
       <AssemblyReference>System.Private.Xml</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="online_Model" sap:VirtualizedContainerService.HintSize="1141,2578" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="online_Model" sap:VirtualizedContainerService.HintSize="1309,3314" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="515,2280" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="515,3016" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="513,1736" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="513,2472" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="strApiUrl" />
             <Variable x:TypeArguments="x:String" Name="strApiKey" />
@@ -194,7 +195,7 @@
                     <OutArgument x:TypeArguments="x:String">[strImageUrl]</OutArgument>
                   </ui:AssignOperation.To>
                   <ui:AssignOperation.Value>
-                    <InArgument x:TypeArguments="x:String">[In_ImageUrl]</InArgument>
+                    <InArgument x:TypeArguments="x:String">[In_DMImageUrl]</InArgument>
                   </ui:AssignOperation.Value>
                 </ui:AssignOperation>
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_21">
@@ -224,9 +225,9 @@
               </scg:List>
             </ui:MultipleAssign.AssignOperations>
           </ui:MultipleAssign>
-          <Switch x:TypeArguments="x:String" DisplayName="Switch Action" Expression="[in_Action.ToLower]" sap:VirtualizedContainerService.HintSize="479,877" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+          <Switch x:TypeArguments="x:String" DisplayName="Switch Action" Expression="[in_Action.ToLower]" sap:VirtualizedContainerService.HintSize="479,1613" sap2010:WorkflowViewState.IdRef="Switch`1_1">
             <Switch.Default>
-              <Sequence DisplayName="Default" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <Sequence DisplayName="Default" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_13">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -234,14 +235,14 @@
                 </sap:WorkflowViewStateService.ViewState>
               </Sequence>
             </Switch.Default>
-            <Sequence x:Key="message" DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,446" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <Sequence x:Key="message" DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,324" sap2010:WorkflowViewState.IdRef="Sequence_12">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="Assign_8">
+              <Assign sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="Assign_8">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[strPayload]</OutArgument>
                 </Assign.To>
@@ -260,7 +261,7 @@
                     New With { _
                         Key .type = "image_url", _
                         Key .image_url = New With { _
-                            Key .url = in_ImageUrl _
+                            Key .url = In_DMImageUrl _
                         } _
                     } _
                 } _
@@ -277,7 +278,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[strPayload]" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[strApiUrl]" sap:VirtualizedContainerService.HintSize="434,102" sap2010:WorkflowViewState.IdRef="HttpClient_3" Method="POST" Result="[strResponseContent]" StatusCode="[out_intResponseStatus]" TimeoutMS="6000">
+              <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[strPayload]" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[strApiUrl]" sap:VirtualizedContainerService.HintSize="382,102" sap2010:WorkflowViewState.IdRef="HttpClient_3" Method="POST" Result="[strResponseContent]" StatusCode="[out_intResponseStatus]" TimeoutMS="6000">
                 <ui:HttpClient.Attachments>
                   <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                 </ui:HttpClient.Attachments>
@@ -301,15 +302,15 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:HttpClient>
-              <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[desStrResponseContent]" JsonString="[strResponseContent]">
+              <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[desStrResponseContent]" JsonString="[strResponseContent]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:DeserializeJson>
-              <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="Assign_4">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[out_PersonalizedMesssage]</OutArgument>
                 </Assign.To>
@@ -318,16 +319,16 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
             </Sequence>
-            <Sequence x:Key="comment" DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,25" sap2010:WorkflowViewState.IdRef="Sequence_14">
+            <Sequence x:Key="comment" DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,279" sap2010:WorkflowViewState.IdRef="Sequence_14">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -350,7 +351,7 @@
                     New With { _
                         Key .type = "image_url", _
                         Key .image_url = New With { _
-                            Key .url = in_ImageUrl _
+                            Key .url = In_CommentImageUrl _
                         } _
                     } _
                 } _
@@ -414,10 +415,10 @@
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
             </Sequence>
-            <Sequence x:Key="both" DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,25" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <Sequence x:Key="both" DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,629" sap2010:WorkflowViewState.IdRef="Sequence_15">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -440,7 +441,7 @@
                     New With { _
                         Key .type = "image_url", _
                         Key .image_url = New With { _
-                            Key .url = in_ImageUrl _
+                            Key .url = In_DMImageUrl _
                         } _
                     } _
                 } _
@@ -489,6 +490,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:DeserializeJson>
+              <Delay Duration="00:00:07" sap:VirtualizedContainerService.HintSize="382,122" sap2010:WorkflowViewState.IdRef="Delay_2" />
               <Assign sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="Assign_12">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[out_PersonalizedMesssage]</OutArgument>
@@ -522,7 +524,7 @@
                     New With { _
                         Key .type = "image_url", _
                         Key .image_url = New With { _
-                            Key .url = in_ImageUrl _
+                            Key .url = In_CommentImageUrl _
                         } _
                     } _
                 } _
