@@ -9,7 +9,8 @@
     "UiPath.Python.Activities": "[1.10.0]",
     "UiPath.System.Activities": "[25.2.1]",
     "UiPath.UIAutomation.Activities": "24.10.6",
-    "UiPath.WebAPI.Activities": "[1.21.1]"
+    "UiPath.WebAPI.Activities": "[1.21.1]",
+    "UiPathTeam.ImageActivities.Activities": "[3.1.1]"
   },
   "webServices": [],
   "entitiesStores": [],

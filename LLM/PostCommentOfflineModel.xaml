@@ -111,6 +111,10 @@
       <AssemblyReference>System.CodeDom</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="PostCommentOfflineModel" sap:VirtualizedContainerService.HintSize="1141,2018" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -200,7 +204,7 @@
         </ui:HttpClient.UrlSegments>
       </ui:HttpClient>
       <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="470,122" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[DeserializedJsonResponseComment]" JsonString="[ResponseComment]" />
-      <If Condition="[out_comment.Contains(&quot;comment:&quot;)]" sap:VirtualizedContainerService.HintSize="470,468" sap2010:WorkflowViewState.IdRef="If_3">
+      <If Condition="[DeserializedJsonResponseComment(&quot;response&quot;).ToString.Contains(&quot;comment:&quot;)]" sap:VirtualizedContainerService.HintSize="470,468" sap2010:WorkflowViewState.IdRef="If_3">
         <If.Then>
           <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_15">
             <sap:WorkflowViewStateService.ViewState>

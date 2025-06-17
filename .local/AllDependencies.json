@@ -5656,6 +5656,15 @@
           }
         }
       },
+      "UiPathTeam.ImageActivities.Activities/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/ImageActivities.dll": {}
+        }
+      },
       "XLParser/1.5.2": {
         "type": "package",
         "dependencies": {
@@ -11197,6 +11206,15 @@
           "lib/net6.0-windows7.0/zu/UiPath.Web.Activities.resources.dll": {
             "locale": "zu"
           }
+        }
+      },
+      "UiPathTeam.ImageActivities.Activities/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/ImageActivities.dll": {}
         }
       },
       "XLParser/1.5.2": {
@@ -21724,6 +21742,20 @@
         "uipath.webapi.activities.runtime.nuspec"
       ]
     },
+    "UiPathTeam.ImageActivities.Activities/3.1.1": {
+      "sha512": "6kr79Hqqk0DsiQ85/eY+ZO9bBeamnv+ehqZSUbw1dkr7RoRV/q7n6t68qGIgg1AwziKS4uaVFo3QRzUYOqKcnA==",
+      "type": "package",
+      "path": "uipathteam.imageactivities.activities/3.1.1",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net461/ImageActivities.dll",
+        "lib/net461/System.Drawing.Common.dll",
+        "lib/net461/System.Drawing.Primitives.dll",
+        "lib/net6.0-windows7.0/ImageActivities.dll",
+        "uipathteam.imageactivities.activities.3.1.1.nupkg.sha512",
+        "uipathteam.imageactivities.activities.nuspec"
+      ]
+    },
     "XLParser/1.5.2": {
       "sha512": "8tnUCmMbn6c/HGuHFyq1sulHym8YReTKDNXFFQk0U8nldNx6RGrwRvLh0+aQjEc7YoC3Q1ztH1npLt7dClKqjw==",
       "type": "package",
@@ -21747,19 +21779,20 @@
       "UiPath.Python.Activities >= 1.10.0 <= 1.10.0",
       "UiPath.System.Activities >= 25.2.1 <= 25.2.1",
       "UiPath.UIAutomation.Activities >= 24.10.6 <= 24.10.6",
-      "UiPath.WebAPI.Activities >= 1.21.1 <= 1.21.1"
+      "UiPath.WebAPI.Activities >= 1.21.1 <= 1.21.1",
+      "UiPathTeam.ImageActivities.Activities >= 3.1.1 <= 3.1.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ART\\.nuget\\packages\\": {}
+    "C:\\Users\\amigo\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "LLM Uipath",
       "projectName": "LLM Uipath",
-      "projectPath": "D:\\project 1 mehmoud\\LLM VISION Uipath\\.local",
-      "packagesPath": "C:\\Users\\ART\\.nuget\\packages\\",
-      "outputPath": "D:\\project 1 mehmoud\\LLM VISION Uipath\\.local",
+      "projectPath": "D:\\LLM VISION Uipath3\\LLM VISION Uipath3 Github\\Instagram-Facebook-Outreaching-Automation\\.local",
+      "packagesPath": "C:\\Users\\amigo\\.nuget\\packages\\",
+      "outputPath": "D:\\LLM VISION Uipath3\\LLM VISION Uipath3 Github\\Instagram-Facebook-Outreaching-Automation\\.local",
       "UsingMicrosoftNETSdk": false,
       "restoreAuditProperties": {
         "enableAudit": "False"
@@ -21797,9 +21830,14 @@
             "include": "Runtime",
             "target": "Package",
             "version": "[1.21.1, 1.21.1]"
+          },
+          "UiPathTeam.ImageActivities.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[3.1.1, 3.1.1]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\ART\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
@@ -21807,21 +21845,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1801",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.",
-      "libraryId": "UiPath.UIAutomation.Activities"
-    },
-    {
-      "code": "NU1801",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.",
-      "libraryId": "UiPath.UIAutomation.Activities"
-    }
-  ]
+  }
 }
