@@ -20,6 +20,40 @@ def allowed_file(filename):
     return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
+def compress_image(image_path, max_size=768, min_size=512):
+    """Compress image to be between min_size and max_size pixels"""
+    try:
+        with Image.open(image_path) as img:
+            # Convert RGBA to RGB if necessary
+            if img.mode in ("RGBA", "LA") or (
+                img.mode == "P" and "transparency" in img.info
+            ):
+                background = Image.new("RGB", img.size, (255, 255, 255))
+                if img.mode == "P":
+                    img = img.convert("RGBA")
+                background.paste(img, mask=img.split()[3])  # 3 is the alpha channel
+                img = background
+
+            # Calculate new dimensions while maintaining aspect ratio
+            width, height = img.size
+            if width > height:
+                new_width = min(max_size, max(min_size, width))
+                new_height = int(height * (new_width / width))
+            else:
+                new_height = min(max_size, max(min_size, height))
+                new_width = int(width * (new_height / height))
+
+            # Resize image
+            resized_img = img.resize((new_width, new_height), Image.Resampling.LANCZOS)
+
+            # Save to temporary file
+            temp_path = f"{image_path}_compressed.jpg"
+            resized_img.save(temp_path, "JPEG", quality=85)
+            return temp_path
+    except Exception as e:
+        raise Exception(f"Error compressing image: {str(e)}")
+
+
 def upload_to_imgbb(image_path, expiration=600):
     """Upload image to ImgBB"""
     try:
@@ -51,13 +85,23 @@ def upload_file():
     if not allowed_file(file_path):
         return jsonify({"error": "File type not allowed"}), 400
 
-    # Upload to ImgBB
-    result = upload_to_imgbb(file_path)
+    try:
+        # Compress the image
+        compressed_path = compress_image(file_path)
 
-    if "error" in result:
-        return jsonify({"error": result["error"]}), 500
+        # Upload compressed image to ImgBB
+        result = upload_to_imgbb(compressed_path)
 
-    return jsonify(result["data"]["image"]["url"])
+        # Clean up temporary compressed file
+        if os.path.exists(compressed_path):
+            os.remove(compressed_path)
+
+        if "error" in result:
+            return jsonify({"error": result["error"]}), 500
+
+        return jsonify(result["data"]["image"]["url"])
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 
 if __name__ == "__main__":
