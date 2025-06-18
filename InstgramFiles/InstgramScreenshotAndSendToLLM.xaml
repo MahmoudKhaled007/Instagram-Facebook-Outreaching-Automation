@@ -146,7 +146,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="InstgramScreenshotAndSendToLLM" sap:VirtualizedContainerService.HintSize="1141,12030" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="InstgramScreenshotAndSendToLLM" sap:VirtualizedContainerService.HintSize="1437,4496" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="currentUrl" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_output" />
@@ -175,7 +175,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="InstgramScreenshotAndSendToLLM" sap:VirtualizedContainerService.HintSize="792,12007" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="InstgramScreenshotAndSendToLLM" sap:VirtualizedContainerService.HintSize="792,4473" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="scg:List(x:Boolean)" Name="ListBoolLimitReached" />
         <Variable x:TypeArguments="x:Int32" Name="IntProfileIndex" />
@@ -196,15 +196,15 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:BuildDataTable>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="758,57" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;InstgramScreenshotAndSendToLLM Workflow Started&quot;]">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="758,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;InstgramScreenshotAndSendToLLM Workflow Started&quot;]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:LogMessage>
-      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="758,57" sap2010:WorkflowViewState.IdRef="CommentOut_20">
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="758,339" sap2010:WorkflowViewState.IdRef="CommentOut_20">
         <ui:CommentOut.Body>
           <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,228" sap2010:WorkflowViewState.IdRef="Sequence_84">
             <sap:WorkflowViewStateService.ViewState>
@@ -228,19 +228,19 @@
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:CommentOut>
-      <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtChromeProfiles]" DisplayName="Read Range Chrome Profiles" sap:VirtualizedContainerService.HintSize="758,57" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Config\ChromeProfiles.xlsx">
+      <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtChromeProfiles]" DisplayName="Read Range Chrome Profiles" sap:VirtualizedContainerService.HintSize="758,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Config\ChromeProfiles.xlsx">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ReadRange>
-      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="758,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="758,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
@@ -272,39 +272,39 @@
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:MultipleAssign>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="758,11440" sap2010:WorkflowViewState.IdRef="TryCatch_8">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="758,3292" sap2010:WorkflowViewState.IdRef="TryCatch_8">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[In_out_dtInstgram]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="756,11047" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[In_out_dtInstgram]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="756,2899" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
             <ui:ForEachRow.Body>
               <ActivityAction x:TypeArguments="sd:DataRow">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="754,10899" sap2010:WorkflowViewState.IdRef="Sequence_86">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="754,2751" sap2010:WorkflowViewState.IdRef="Sequence_86">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="720,10839" sap2010:WorkflowViewState.IdRef="TryCatch_12">
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="720,2691" sap2010:WorkflowViewState.IdRef="TryCatch_12">
                     <TryCatch.Try>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="718,10477" sap2010:WorkflowViewState.IdRef="Sequence_124">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="718,2329" sap2010:WorkflowViewState.IdRef="Sequence_124">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <If Condition="[MsgCounter &lt; CInt(In_config(&quot;MsgNumber&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="684,9781" sap2010:WorkflowViewState.IdRef="If_26">
+                        <If Condition="[MsgCounter &lt; CInt(In_config(&quot;MsgNumber&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="684,1633" sap2010:WorkflowViewState.IdRef="If_26">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -312,7 +312,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <If.Then>
-                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="682,9130" sap2010:WorkflowViewState.IdRef="Sequence_120">
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="682,982" sap2010:WorkflowViewState.IdRef="Sequence_120">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -333,20 +333,20 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </Assign>
-                              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Travis Sandland (@travland82) • Instagra(2)" sap:VirtualizedContainerService.HintSize="648,9013" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="c19b33d6-a40d-46f6-9a80-096f031997bc" Version="V2" WindowResize="Maximize">
+                              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Travis Sandland (@travland82) • Instagra(2)" sap:VirtualizedContainerService.HintSize="648,865" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="c19b33d6-a40d-46f6-9a80-096f031997bc" Version="V2" WindowResize="Maximize">
                                 <uix:NApplicationCard.Body>
                                   <ActivityAction x:TypeArguments="x:Object">
                                     <ActivityAction.Argument>
                                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                     </ActivityAction.Argument>
-                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="614,8773" sap2010:WorkflowViewState.IdRef="Sequence_117">
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,625" sap2010:WorkflowViewState.IdRef="Sequence_117">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="580,57" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="[CurrentRow(&quot;url&quot;).ToString]" Version="V4">
+                                      <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="[CurrentRow(&quot;url&quot;).ToString]" Version="V4">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -354,7 +354,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uix:NGoToUrl>
-                                      <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="580,57" sap2010:WorkflowViewState.IdRef="Delay_10">
+                                      <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Delay_10">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -362,7 +362,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </Delay>
-                                      <Assign sap:VirtualizedContainerService.HintSize="580,57" sap2010:WorkflowViewState.IdRef="Assign_13">
+                                      <Assign sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_13">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:String">[CurrentUserName]</OutArgument>
                                         </Assign.To>
@@ -376,7 +376,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </Assign>
-                                      <Assign sap:VirtualizedContainerService.HintSize="580,57" sap2010:WorkflowViewState.IdRef="Assign_21">
+                                      <Assign sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_21">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:String">[currentUrl]</OutArgument>
                                         </Assign.To>
@@ -390,7 +390,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </Assign>
-                                      <ui:UiElementExists DisplayName="Element Exists 'SPAN'" Exists="[privateAccount]" sap:VirtualizedContainerService.HintSize="580,57" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                                      <ui:UiElementExists DisplayName="Element Exists 'SPAN'" Exists="[privateAccount]" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
                                         <ui:UiElementExists.Target>
                                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4f1fcb5c-0502-4224-ab88-ff25ebdc29f1" InformativeScreenshot="1332ef1fc62f20faaec98c760d4e6ffd" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;svg' tag='svg' /&gt;" TimeoutMS="10000">
                                             <ui:Target.WaitForReady>
@@ -405,7 +405,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </ui:UiElementExists>
-                                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Posts" sap:VirtualizedContainerService.HintSize="580,57" sap2010:WorkflowViewState.IdRef="GetValue_2">
+                                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Posts" sap:VirtualizedContainerService.HintSize="416,139" sap2010:WorkflowViewState.IdRef="GetValue_2">
                                         <ui:GetValue.Target>
                                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3b938330-5d60-4ff1-a30a-7c9bfe4172fb" InformativeScreenshot="3457a8ed76bbc6b130de5cb1370f1cb9" Selector="[string.Format(&quot;&lt;html app='chrome.exe' url='{0}' /&gt;&lt;webctrl tag='UL' innertext='*following*' /&gt;&quot;, currentUrl)]" WaitForReady="COMPLETE">
                                             <ui:Target.TimeoutMS>
@@ -418,12 +418,12 @@
                                         </ui:GetValue.Value>
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </ui:GetValue>
-                                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="580,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
                                         <ui:MultipleAssign.AssignOperations>
                                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
@@ -459,7 +459,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </ui:MultipleAssign>
-                                      <If Condition="[postsCount&gt;0]" DisplayName="If post count &gt;0" sap:VirtualizedContainerService.HintSize="580,8312" sap2010:WorkflowViewState.IdRef="If_17">
+                                      <If Condition="[postsCount&gt;0]" DisplayName="If post count &gt;0" sap:VirtualizedContainerService.HintSize="580,8283" sap2010:WorkflowViewState.IdRef="If_17">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -467,7 +467,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                         <If.Then>
-                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="578,8156" sap2010:WorkflowViewState.IdRef="Sequence_115">
+                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="578,8152" sap2010:WorkflowViewState.IdRef="Sequence_115">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -983,7 +983,7 @@
                                                           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="UploadAPI - Message" sap:VirtualizedContainerService.HintSize="470,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_30" UnSafe="False" WorkflowFileName="Logic\UploadAPI.xaml">
                                                             <ui:InvokeWorkflowFile.Arguments>
                                                               <OutArgument x:TypeArguments="x:String" x:Key="out_imageUrl">[DMimageUrl]</OutArgument>
-                                                              <InArgument x:TypeArguments="x:String" x:Key="in_imagePath">[In_config("Instgram_Path")+ProfileImageName+".jpg"]</InArgument>
+                                                              <InArgument x:TypeArguments="x:String" x:Key="in_imagePath">[In_config("Instgram_Path")+ProfileImageName+".png"]</InArgument>
                                                             </ui:InvokeWorkflowFile.Arguments>
                                                           </ui:InvokeWorkflowFile>
                                                           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="online Model - Invoke Workflow File (online Model.xaml)" sap:VirtualizedContainerService.HintSize="470,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_31" UnSafe="False" WorkflowFileName="LLM\online Model.xaml">
@@ -1060,7 +1060,7 @@
                                                           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="UploadAPI Comment" sap:VirtualizedContainerService.HintSize="470,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_38" UnSafe="False" WorkflowFileName="Logic\UploadAPI.xaml">
                                                             <ui:InvokeWorkflowFile.Arguments>
                                                               <OutArgument x:TypeArguments="x:String" x:Key="out_imageUrl">[CommentImageURl]</OutArgument>
-                                                              <InArgument x:TypeArguments="x:String" x:Key="in_imagePath">[In_config("Instgram_Path")+PostImageName+".jpg"]</InArgument>
+                                                              <InArgument x:TypeArguments="x:String" x:Key="in_imagePath">[In_config("Instgram_Path")+PostImageName+".png"]</InArgument>
                                                             </ui:InvokeWorkflowFile.Arguments>
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1145,7 +1145,7 @@
                                                           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="UploadAPI Profile" sap:VirtualizedContainerService.HintSize="470,57" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_42" UnSafe="False" WorkflowFileName="Logic\UploadAPI.xaml">
                                                             <ui:InvokeWorkflowFile.Arguments>
                                                               <OutArgument x:TypeArguments="x:String" x:Key="out_imageUrl">[DMimageUrl]</OutArgument>
-                                                              <InArgument x:TypeArguments="x:String" x:Key="in_imagePath">[In_config("Instgram_Path")+ProfileImageName+".jpg"]</InArgument>
+                                                              <InArgument x:TypeArguments="x:String" x:Key="in_imagePath">[In_config("Instgram_Path")+ProfileImageName+".png"]</InArgument>
                                                             </ui:InvokeWorkflowFile.Arguments>
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1165,7 +1165,7 @@
                                                           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="UploadAPI Comment" sap:VirtualizedContainerService.HintSize="470,57" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_40" UnSafe="False" WorkflowFileName="Logic\UploadAPI.xaml">
                                                             <ui:InvokeWorkflowFile.Arguments>
                                                               <OutArgument x:TypeArguments="x:String" x:Key="out_imageUrl">[CommentImageURl]</OutArgument>
-                                                              <InArgument x:TypeArguments="x:String" x:Key="in_imagePath">[In_config("Instgram_Path")+PostImageName+".jpg"]</InArgument>
+                                                              <InArgument x:TypeArguments="x:String" x:Key="in_imagePath">[In_config("Instgram_Path")+PostImageName+".png"]</InArgument>
                                                             </ui:InvokeWorkflowFile.Arguments>
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1332,8 +1332,8 @@
                                                           <OutArgument x:TypeArguments="x:String" x:Key="out_comment">[personalizedComment]</OutArgument>
                                                           <OutArgument x:TypeArguments="x:Boolean" x:Key="out_BoolModelResponded">[BoolModelResponded]</OutArgument>
                                                           <InArgument x:TypeArguments="x:String" x:Key="in_action">[in_Action]</InArgument>
-                                                          <InArgument x:TypeArguments="x:String" x:Key="in_ProfileimagePath">[In_config("Instgram_Path")+ProfileImageName+".jpg"]</InArgument>
-                                                          <InArgument x:TypeArguments="x:String" x:Key="in_PostimagePath">[In_config("Instgram_Path")+PostImageName+".jpg"]</InArgument>
+                                                          <InArgument x:TypeArguments="x:String" x:Key="in_ProfileimagePath">[In_config("Instgram_Path")+ProfileImageName+".png"]</InArgument>
+                                                          <InArgument x:TypeArguments="x:String" x:Key="in_PostimagePath">[In_config("Instgram_Path")+PostImageName+".png"]</InArgument>
                                                         </ui:InvokeWorkflowFile.Arguments>
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1446,7 +1446,7 @@
                                                 </Sequence>
                                               </TryCatch.Finally>
                                             </TryCatch>
-                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="544,169" sap2010:WorkflowViewState.IdRef="SendHotkey_35" Key="esc" KeyModifiers="None" SpecialKey="True">
+                                            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="544,165" sap2010:WorkflowViewState.IdRef="SendHotkey_35" Key="esc" KeyModifiers="None" SpecialKey="True">
                                               <ui:SendHotkey.Target>
                                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="b149bea9-b064-48ab-8e69-8bb08df1b3b7">
                                                   <ui:Target.TimeoutMS>
@@ -1519,7 +1519,7 @@
                                                 </Sequence>
                                               </If.Else>
                                             </If>
-                                            <If Condition="[in_Action.ToLower.Equals(&quot;message&quot;) or in_Action.ToLower.Equals(&quot;both&quot;)]" sap:VirtualizedContainerService.HintSize="544,57" sap2010:WorkflowViewState.IdRef="If_25">
+                                            <If Condition="[in_Action.ToLower.Equals(&quot;message&quot;) or in_Action.ToLower.Equals(&quot;both&quot;)]" sap:VirtualizedContainerService.HintSize="470,651" sap2010:WorkflowViewState.IdRef="If_25">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1538,6 +1538,7 @@
                                                       <OutArgument x:TypeArguments="x:Boolean" x:Key="out_BoolSendMessage">[BoolSendMessage]</OutArgument>
                                                       <InArgument x:TypeArguments="x:String" x:Key="in_message">[PersonalizedMesssage]</InArgument>
                                                       <InArgument x:TypeArguments="x:String" x:Key="in_username">[CurrentUserName]</InArgument>
+                                                      <InArgument x:TypeArguments="x:String" x:Key="in_splitter">[In_config("SplitterWord").ToString]</InArgument>
                                                     </ui:InvokeWorkflowFile.Arguments>
                                                   </ui:InvokeWorkflowFile>
                                                   <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="SendHotkey_33" Key="esc" KeyModifiers="None" SpecialKey="True">
@@ -1665,7 +1666,7 @@
                                   </ActivityAction>
                                 </uix:NApplicationCard.Body>
                                 <uix:NApplicationCard.TargetApp>
-                                  <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Edge" IconBase64="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" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="49e11df2f62a4d44db4080767b844677.jpg" Selector="&lt;html app='chrome.exe' url='*instagram.com*' /&gt;" Title="Travis Sandland (@travland82) • Instagram photos and videos" Url="[CurrentRow(&quot;url&quot;).ToString]" Version="V1" />
+                                  <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Edge" IconBase64="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" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="49e11df2f62a4d44db4080767b844677.png" Selector="&lt;html app='chrome.exe' url='*instagram.com*' /&gt;" Title="Travis Sandland (@travland82) • Instagram photos and videos" Url="[CurrentRow(&quot;url&quot;).ToString]" Version="V1" />
                                 </uix:NApplicationCard.TargetApp>
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">

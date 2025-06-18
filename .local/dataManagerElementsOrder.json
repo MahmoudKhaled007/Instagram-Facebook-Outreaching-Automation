@@ -528,8 +528,8 @@
       "Path": "Logic/TakeScreenshot.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "SaveImagePath&Sequence_1",
         "folder&Sequence_1",
-        "imagePath&Sequence_8",
         "imagePath&Sequence_3"
       ],
       "ArgumentsSectionElementsOrder": [
