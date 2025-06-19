@@ -98,7 +98,7 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="InitApplications" sap:VirtualizedContainerService.HintSize="1141,5704" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="InitApplications" sap:VirtualizedContainerService.HintSize="1309,5704" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="chromeArguments" />
       <Variable x:TypeArguments="x:String" Default="chrome.exe;hamada.exe" Name="in_strApplicationsList" />
@@ -145,7 +145,7 @@
                   <InArgument x:TypeArguments="x:Boolean">[Not String.IsNullOrEmpty(in_strApplicationsList.Trim)]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each item" sap:VirtualizedContainerService.HintSize="434,293" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[Directory.GetFiles(System.IO.Path.Combine(Environment.CurrentDirectory, &quot;Instgram Images&quot;).ToString,&quot;*.jpg&quot;)]">
+              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each item" sap:VirtualizedContainerService.HintSize="434,293" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[Directory.GetFiles(System.IO.Path.Combine(Environment.CurrentDirectory, &quot;Instgram Images&quot;).ToString,&quot;*.png&quot;)]">
                 <ui:ForEach.Body>
                   <ActivityAction x:TypeArguments="x:String">
                     <ActivityAction.Argument>

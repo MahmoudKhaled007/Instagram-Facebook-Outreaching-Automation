@@ -32,6 +32,17 @@
         "ActivityName": "Assign",
         "IsTransient": false
       }
+    ],
+    "InstgramFiles/CheckInstgramReplies.xaml": [
+      {
+        "IsEnabled": true,
+        "Annotation": null,
+        "Id": "5f19f49e-34db-4b0d-99b1-446f67018bb7",
+        "ActivityIdRef": "If_3",
+        "ActivityId": "1.70",
+        "ActivityName": "If",
+        "IsTransient": false
+      }
     ]
   }
 }
