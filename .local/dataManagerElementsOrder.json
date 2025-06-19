@@ -11,15 +11,7 @@
     {
       "Path": "Main.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "actionSelection&Sequence_2",
-        "dtInstgramInput&Sequence_1",
-        "dtFacbookInput&Sequence_1",
-        "dtConfig&Sequence_2",
-        "config&Sequence_2",
-        "ModelSelection&Sequence_2",
-        "platformSelection&Sequence_2"
-      ],
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
         "in_comment",
         "in_message"
@@ -124,23 +116,7 @@
     {
       "Path": "InstgramFiles/InstgramScreenshotAndSendToLLM.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "PostImageName&Sequence_1",
-        "ProfileImageName&Sequence_1",
-        "dt_output&Sequence_1",
-        "CurrentUserName&Sequence_1",
-        "privateAccount&Sequence_1",
-        "Str_Post&Sequence_1",
-        "folder&Sequence_9",
-        "imageUrl&Sequence_9",
-        "model_response&Sequence_9",
-        "personalizedComment&Sequence_9",
-        "PersonalizedMesssage&Sequence_9",
-        "ProfileCounter&Sequence_9",
-        "postsCount&Sequence_15",
-        "BoolModelResponded&Sequence_18",
-        "InstgramLogout&Sequence_32"
-      ],
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
         "in_Action",
         "in_BoolLocalRun",
@@ -323,11 +299,7 @@
     {
       "Path": "InstgramFiles/PostNavigation.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "counter&Sequence_2",
-        "Str_Post&Sequence_2",
-        "randomIdx&Sequence_2"
-      ],
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
         "in_Action",
         "in_comment",
@@ -527,11 +499,7 @@
     {
       "Path": "Logic/TakeScreenshot.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "SaveImagePath&Sequence_1",
-        "folder&Sequence_1",
-        "imagePath&Sequence_3"
-      ],
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
         "in_post",
         "in_InstgramFacebookSelection",
@@ -544,12 +512,7 @@
     {
       "Path": "InstgramFiles/SendMessageToInstgramProfile.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "bool_Message&Sequence_1",
-        "GetTextMessage&Sequence_1",
-        "privateAccount&Sequence_1",
-        "notfound&Sequence_1"
-      ],
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
         "in_username",
         "in_message"

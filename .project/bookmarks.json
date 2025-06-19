@@ -17,7 +17,7 @@
         "Annotation": null,
         "Id": "f7076a5d-faf4-476d-b793-e5d01136a057",
         "ActivityIdRef": "GoBack_1",
-        "ActivityId": "1.18",
+        "ActivityId": null,
         "ActivityName": "Go Back",
         "IsTransient": false
       }

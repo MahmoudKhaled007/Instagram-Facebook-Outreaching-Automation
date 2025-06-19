@@ -117,7 +117,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PostCommentOfflineModel" sap:VirtualizedContainerService.HintSize="1141,2018" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="PostCommentOfflineModel" sap:VirtualizedContainerService.HintSize="1142,2018" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ResponseComment" />
       <Variable x:TypeArguments="x:Int32" Name="ResponseStatueComment" />
@@ -234,7 +234,7 @@
                 <OutArgument x:TypeArguments="x:String">[out_comment]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[DeserializedJsonResponseComment("response").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String">[DeserializedJsonResponseComment("response").ToString.Replace(vbCrLf, String.Empty).Replace(vbCr, String.Empty).Replace(vbLf, String.Empty)]</InArgument>
               </Assign.Value>
             </Assign>
           </Sequence>
