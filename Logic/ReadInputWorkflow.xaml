@@ -4,6 +4,7 @@
     <x:Property Name="Out_dtInstgramInput" Type="OutArgument(sd:DataTable)" />
     <x:Property Name="Out_dtFacbookInput" Type="OutArgument(sd:DataTable)" />
     <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="out_Config" Type="OutArgument(scg:Dictionary(x:String, x:String))" />
+    <x:Property Name="Out_dtInstgramTemplate" Type="OutArgument(sd:DataTable)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
@@ -101,15 +102,15 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ReadInputWorkflow" sap:VirtualizedContainerService.HintSize="1142,1757" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ReadInputWorkflow" sap:VirtualizedContainerService.HintSize="1164,1877" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="498,1734" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="498,1854" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="496,1253" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="496,1373" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="sd:DataTable" Name="dtConfig" />
           </Sequence.Variables>
@@ -145,6 +146,7 @@
             </sap:WorkflowViewStateService.ViewState>
           </ui:CommentOut>
           <ui:ReadRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[Out_dtInstgramInput]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="462,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" Range="A1" SheetName="Sheet1" WorkbookPath="input files\instagram.xlsx" />
+          <ui:ReadRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[Out_dtInstgramTemplate]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="462,120" sap2010:WorkflowViewState.IdRef="ReadRange_6" Range="A1" SheetName="Sheet1" WorkbookPath="config\comment_and_message_templetes_for_IG_BOT.xlsx" />
           <ui:ReadRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[Out_dtFacbookInput]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="462,120" sap2010:WorkflowViewState.IdRef="ReadRange_4" Range="A1" SheetName="Sheet1" WorkbookPath="input files\facbook_profiles2.xlsx" />
           <ui:ReadRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtConfig]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="462,120" sap2010:WorkflowViewState.IdRef="ReadRange_3" Range="A1" SheetName="Sheet1" WorkbookPath="config\config.xlsx" />
           <ui:ReadRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[out_dtChromeProfiles]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="462,120" sap2010:WorkflowViewState.IdRef="ReadRange_5" Range="A1" SheetName="Sheet1" WorkbookPath="config\ChromeProfiles.xlsx" />

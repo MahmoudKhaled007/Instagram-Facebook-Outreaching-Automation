@@ -2,7 +2,7 @@
   "Value": {
     "FacebookFiles/FacebookSendMessageToPages.xaml": [
       {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "Annotation": null,
         "Id": "5d693c6e-7d62-4514-9724-93e94622bba9",
         "ActivityIdRef": "CommentOut_2",
@@ -13,7 +13,7 @@
     ],
     "InstgramFiles/PostNavigation.xaml": [
       {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "Annotation": null,
         "Id": "f7076a5d-faf4-476d-b793-e5d01136a057",
         "ActivityIdRef": "GoBack_1",
@@ -24,7 +24,7 @@
     ],
     "FacebookFiles/FacebookCommentSequence.xaml": [
       {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "Annotation": null,
         "Id": "56872750-3684-4196-8321-7f9de8947ffb",
         "ActivityIdRef": "Assign_1",
@@ -35,12 +35,23 @@
     ],
     "InstgramFiles/CheckInstgramReplies.xaml": [
       {
-        "IsEnabled": true,
+        "IsEnabled": false,
         "Annotation": null,
         "Id": "5f19f49e-34db-4b0d-99b1-446f67018bb7",
         "ActivityIdRef": "If_3",
         "ActivityId": "1.70",
         "ActivityName": "If",
+        "IsTransient": false
+      }
+    ],
+    "Logic/InitApplications.xaml": [
+      {
+        "IsEnabled": false,
+        "Annotation": null,
+        "Id": "2d411ec5-6df3-40a9-a28d-8a9330afe4f5",
+        "ActivityIdRef": "Delay_1",
+        "ActivityId": "1.154",
+        "ActivityName": "Delay",
         "IsTransient": false
       }
     ]
