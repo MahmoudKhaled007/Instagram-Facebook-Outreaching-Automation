@@ -130,7 +130,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="offline_model" sap:VirtualizedContainerService.HintSize="1309,2572" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="offline_model" sap:VirtualizedContainerService.HintSize="1168,3010" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ResponseMessage" />
       <Variable x:TypeArguments="x:Int32" Name="ResponseStatueMessage" />
@@ -1119,9 +1119,9 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <TryCatch DisplayName="Offline Model V2 Sequence Try Catch" sap:VirtualizedContainerService.HintSize="544,2444" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+    <TryCatch DisplayName="Offline Model V2 Sequence Try Catch" sap:VirtualizedContainerService.HintSize="544,2882" sap2010:WorkflowViewState.IdRef="TryCatch_3">
       <TryCatch.Try>
-        <If Condition="[in_action.ToLower.Equals(&quot;message&quot;)]" sap:VirtualizedContainerService.HintSize="542,2115" sap2010:WorkflowViewState.IdRef="If_19">
+        <If Condition="[in_action.ToLower.Equals(&quot;message&quot;)]" sap:VirtualizedContainerService.HintSize="542,2553" sap2010:WorkflowViewState.IdRef="If_19">
           <If.Then>
             <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="540,228" sap2010:WorkflowViewState.IdRef="Sequence_61">
               <sap:WorkflowViewStateService.ViewState>
@@ -1141,18 +1141,25 @@
             </Sequence>
           </If.Then>
           <If.Else>
-            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="540,1781" sap2010:WorkflowViewState.IdRef="Sequence_62">
+            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="540,2219" sap2010:WorkflowViewState.IdRef="Sequence_62">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <If Condition="[in_action.ToLower.Equals(&quot;comment&quot;)]" sap:VirtualizedContainerService.HintSize="506,1721" sap2010:WorkflowViewState.IdRef="If_21">
+              <If Condition="[in_action.ToLower.Equals(&quot;comment&quot;)]" sap:VirtualizedContainerService.HintSize="506,2159" sap2010:WorkflowViewState.IdRef="If_21">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
                 <If.Then>
-                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="504,228" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="504,25" sap2010:WorkflowViewState.IdRef="Sequence_67">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="PostCommentOfflineModel - Invoke Workflow File (PostCommentOfflineModel.xaml)" sap:VirtualizedContainerService.HintSize="470,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="LLM\PostCommentOfflineModel.xaml">
@@ -1166,7 +1173,7 @@
                   </Sequence>
                 </If.Then>
                 <If.Else>
-                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="504,1364" sap2010:WorkflowViewState.IdRef="Sequence_68">
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="504,2005" sap2010:WorkflowViewState.IdRef="Sequence_68">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1210,90 +1217,136 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </Assign>
                     </Sequence>
-                    <If Condition="[in_ResponseType.Equals(&quot;AI message and template comment&quot;.ToLower.Trim)]" sap:VirtualizedContainerService.HintSize="470,822" sap2010:WorkflowViewState.IdRef="If_26">
+                    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[in_ResponseType.ToLower]" sap:VirtualizedContainerService.HintSize="470,1528" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                      <Switch.Default>
+                        <Sequence DisplayName="Default" sap:VirtualizedContainerService.HintSize="468,25" sap2010:WorkflowViewState.IdRef="Sequence_117">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </Switch.Default>
+                      <Sequence x:Key="AI message and template comment" DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,342" sap2010:WorkflowViewState.IdRef="Sequence_114">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProfileDMOfflineModel - Invoke Workflow File (ProfileDMOfflineModel.xaml)" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="LLM\ProfileDMOfflineModel.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_DmPrompt">[in_DmPrompt]</InArgument>
+                            <OutArgument x:TypeArguments="x:String" x:Key="out_message">[out_message]</OutArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_ProfileimagePath">[in_ProfileimagePath]</InArgument>
+                            <OutArgument x:TypeArguments="x:Boolean" x:Key="out_BoolModelResponded">[out_BoolModelResponded]</OutArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_userName">[in_username]</InArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:InvokeWorkflowFile>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_54">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[out_comment]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[in_dtInstgaramTemplate.Rows(randomIndex)("Comment").ToString.Replace(vbCrLf, String.Empty).Replace(vbCr, String.Empty).Replace(vbLf, String.Empty)]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                      </Sequence>
+                      <Sequence x:Key="Template message and AI comment" DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,342" sap2010:WorkflowViewState.IdRef="Sequence_115">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="PostCommentOfflineModel - Invoke Workflow File (PostCommentOfflineModel.xaml)" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="LLM\PostCommentOfflineModel.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_postPrompt">[in_postPrompt]</InArgument>
+                            <OutArgument x:TypeArguments="x:Boolean" x:Key="out_BoolModelResponded">[out_BoolModelResponded]</OutArgument>
+                            <OutArgument x:TypeArguments="x:String" x:Key="out_comment">[out_comment]</OutArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_PostimagePath">[in_PostimagePath]</InArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:InvokeWorkflowFile>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_55">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[out_message]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[in_dtInstgaramTemplate.Rows(randomIndex)("Message").ToString.Replace("first name",in_username).Replace(vbCrLf, String.Empty).Replace(vbCr, String.Empty).Replace(vbLf, String.Empty)]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                      </Sequence>
+                      <Sequence x:Key="No Template" DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,527" sap2010:WorkflowViewState.IdRef="Sequence_116">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="PostCommentOfflineModel - Invoke Workflow File (PostCommentOfflineModel.xaml)" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="LLM\PostCommentOfflineModel.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_postPrompt">[in_postPrompt]</InArgument>
+                            <OutArgument x:TypeArguments="x:Boolean" x:Key="out_BoolModelResponded">[out_BoolModelResponded]</OutArgument>
+                            <OutArgument x:TypeArguments="x:String" x:Key="out_comment">[out_comment]</OutArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_PostimagePath">[in_PostimagePath]</InArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:InvokeWorkflowFile>
+                        <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProfileDMOfflineModel - Invoke Workflow File (ProfileDMOfflineModel.xaml)" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="LLM\ProfileDMOfflineModel.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_DmPrompt">[in_DmPrompt]</InArgument>
+                            <OutArgument x:TypeArguments="x:String" x:Key="out_message">[out_message]</OutArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_ProfileimagePath">[in_ProfileimagePath]</InArgument>
+                            <OutArgument x:TypeArguments="x:Boolean" x:Key="out_BoolModelResponded">[out_BoolModelResponded]</OutArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_userName">[in_username]</InArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:InvokeWorkflowFile>
+                      </Sequence>
+                    </Switch>
+                    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="470,57" sap2010:WorkflowViewState.IdRef="Delay_4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <If.Then>
-                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,342" sap2010:WorkflowViewState.IdRef="Sequence_111">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProfileDMOfflineModel - Invoke Workflow File (ProfileDMOfflineModel.xaml)" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="LLM\ProfileDMOfflineModel.xaml">
-                            <ui:InvokeWorkflowFile.Arguments>
-                              <InArgument x:TypeArguments="x:String" x:Key="in_DmPrompt">[in_DmPrompt]</InArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="out_message">[out_message]</OutArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="in_ProfileimagePath">[in_ProfileimagePath]</InArgument>
-                              <OutArgument x:TypeArguments="x:Boolean" x:Key="out_BoolModelResponded">[out_BoolModelResponded]</OutArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="in_userName">[in_username]</InArgument>
-                            </ui:InvokeWorkflowFile.Arguments>
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </ui:InvokeWorkflowFile>
-                          <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_50">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[out_comment]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[in_dtInstgaramTemplate.Rows(randomIndex)("Comment").ToString.Replace(vbCrLf, String.Empty).Replace(vbCr, String.Empty).Replace(vbLf, String.Empty)]</InArgument>
-                            </Assign.Value>
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </Assign>
-                        </Sequence>
-                      </If.Then>
-                      <If.Else>
-                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,342" sap2010:WorkflowViewState.IdRef="Sequence_112">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="PostCommentOfflineModel - Invoke Workflow File (PostCommentOfflineModel.xaml)" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="LLM\PostCommentOfflineModel.xaml">
-                            <ui:InvokeWorkflowFile.Arguments>
-                              <InArgument x:TypeArguments="x:String" x:Key="in_postPrompt">[in_postPrompt]</InArgument>
-                              <OutArgument x:TypeArguments="x:Boolean" x:Key="out_BoolModelResponded">[out_BoolModelResponded]</OutArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="out_comment">[out_comment]</OutArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="in_PostimagePath">[in_PostimagePath]</InArgument>
-                            </ui:InvokeWorkflowFile.Arguments>
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </ui:InvokeWorkflowFile>
-                          <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_51">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[out_message]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[in_dtInstgaramTemplate.Rows(randomIndex)("Message").ToString.Replace("first name",in_username).Replace(vbCrLf, String.Empty).Replace(vbCr, String.Empty).Replace(vbLf, String.Empty)]</InArgument>
-                            </Assign.Value>
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </Assign>
-                        </Sequence>
-                      </If.Else>
-                    </If>
-                    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="470,122" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                    </Delay>
                     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="470,48" sap2010:WorkflowViewState.IdRef="CommentOut_12">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="452,506" sap2010:WorkflowViewState.IdRef="Sequence_110">

@@ -90,7 +90,7 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="1164,2914" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="1168,2914" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtInstgramInput" />
       <Variable x:TypeArguments="sd:DataTable" Name="dtFacbookInput" />
@@ -166,7 +166,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="382,315" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Will you choose Message or Comment or Post" OptionsString="AI message and template comment; Template message and AI comment" Title="Choose Response Type">
+            <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="382,315" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Will you choose Message or Comment or Post" OptionsString="AI message and template comment; Template message and AI comment; No Template" Title="Choose Response Type">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[ResponseType]</OutArgument>
               </ui:InputDialog.Result>
