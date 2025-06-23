@@ -144,22 +144,7 @@
     {
       "Path": "LLM/offline model.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "messagesList&Sequence_1",
-        "capture&Sequence_1",
-        "randomComment&Sequence_1",
-        "rnd&Sequence_1",
-        "comments&Sequence_1",
-        "matches&Sequence_1",
-        "pattern&Sequence_1",
-        "responseText&Sequence_1",
-        "ResponseMessage&Sequence_1",
-        "ResponseStatueMessage&Sequence_1",
-        "DeserializedJsonResponseMessage&Sequence_1",
-        "ResponseComment&Sequence_1",
-        "ResponseStatueComment&Sequence_1",
-        "DeserializedJsonResponseComment&Sequence_1"
-      ],
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
         "in_PostimagePath",
         "in_ProfileimagePath",
@@ -523,31 +508,7 @@
     {
       "Path": "LLM/ProfileDMOfflineModel.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "variable1&Sequence_1",
-        "base64Image&Sequence_1",
-        "jsonBody&Sequence_1",
-        "DeserializedJsonResponseComment&Sequence_1",
-        "ResponseStatueComment&Sequence_1",
-        "ResponseComment&Sequence_1",
-        "DeserializedJsonResponseMessage&Sequence_1",
-        "ResponseStatueMessage&Sequence_1",
-        "ResponseMessage&Sequence_1",
-        "responseText&Sequence_1",
-        "pattern&Sequence_1",
-        "matches&Sequence_1",
-        "capture&Sequence_1",
-        "messagesList&Sequence_1",
-        "rnd&Sequence_1",
-        "ResponseStatueComment&Sequence_1",
-        "DeserializedJsonResponseMessage&Sequence_1",
-        "responseText&Sequence_1",
-        "pattern&Sequence_1",
-        "rnd&Sequence_1",
-        "capture&Sequence_1",
-        "messagesList&Sequence_1",
-        "matches&Sequence_1"
-      ],
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": null,
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null
@@ -624,6 +585,14 @@
       "Path": "LLM/OnlineModelCall.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": null,
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Logic/Action - SwitchTakeScreenshot.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": null,
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null

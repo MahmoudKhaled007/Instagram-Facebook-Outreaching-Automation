@@ -124,7 +124,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ProfileDMOfflineModel" sap:VirtualizedContainerService.HintSize="1141,1502" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ProfileDMOfflineModel" sap:VirtualizedContainerService.HintSize="1309,1502" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="variable1" />
       <Variable x:TypeArguments="x:String" Name="ResponseMessage" />
@@ -192,7 +192,7 @@
         </Assign.To>
         <Assign.Value>
           <InArgument x:TypeArguments="x:String" xml:space="preserve">["{ 
-    ""model"": ""gemma3:12b"", 
+    ""model"": ""gemma3:27b"", 
     ""prompt"": """+ in_DmPrompt.Replace("""", "\""")+ """,
     ""stream"": false, 
     ""images"": [""" + base64Image + """] 

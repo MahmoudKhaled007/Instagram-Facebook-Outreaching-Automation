@@ -130,7 +130,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="offline_model" sap:VirtualizedContainerService.HintSize="1168,3010" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="offline_model" sap:VirtualizedContainerService.HintSize="1309,3010" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ResponseMessage" />
       <Variable x:TypeArguments="x:Int32" Name="ResponseStatueMessage" />
@@ -1228,7 +1228,7 @@
                           </sap:WorkflowViewStateService.ViewState>
                         </Sequence>
                       </Switch.Default>
-                      <Sequence x:Key="AI message and template comment" DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,342" sap2010:WorkflowViewState.IdRef="Sequence_114">
+                      <Sequence x:Key="ai message and template comment" DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,342" sap2010:WorkflowViewState.IdRef="Sequence_114">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1265,7 +1265,7 @@
                           </sap:WorkflowViewStateService.ViewState>
                         </Assign>
                       </Sequence>
-                      <Sequence x:Key="Template message and AI comment" DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,342" sap2010:WorkflowViewState.IdRef="Sequence_115">
+                      <Sequence x:Key="template message and ai comment" DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,342" sap2010:WorkflowViewState.IdRef="Sequence_115">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1300,7 +1300,7 @@
                           </sap:WorkflowViewStateService.ViewState>
                         </Assign>
                       </Sequence>
-                      <Sequence x:Key="No Template" DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,527" sap2010:WorkflowViewState.IdRef="Sequence_116">
+                      <Sequence x:Key="no template" DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,527" sap2010:WorkflowViewState.IdRef="Sequence_116">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>

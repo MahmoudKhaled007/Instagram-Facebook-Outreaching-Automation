@@ -90,11 +90,15 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="1168,2914" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="1309,2914" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtInstgramInput" />
       <Variable x:TypeArguments="sd:DataTable" Name="dtFacbookInput" />
-      <Variable x:TypeArguments="x:String" Name="ResponseType" />
+      <Variable x:TypeArguments="x:String" Name="ResponseType">
+        <Variable.Default>
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Nothing" />
+        </Variable.Default>
+      </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -255,7 +259,7 @@
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="InstgramScreenshotAndSendToLLM - Invoke Workflow File (InstgramScreenshotAndSendToLLM.xaml)" sap:VirtualizedContainerService.HintSize="382,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="InstgramFiles\InstgramScreenshotAndSendToLLM.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtInstagramTemplate">[dtInstgramTemplate]</InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="in_ResponseType">[ResponseType.ToLower.Trim]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_ResponseType">[If(String.IsNullOrEmpty(ResponseType), Nothing, ResponseType.ToLower().Trim())]</InArgument>
               <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="In_config">[config]</InArgument>
               <InOutArgument x:TypeArguments="sd:DataTable" x:Key="In_out_dtInstgram">[dtInstgramInput]</InOutArgument>
               <InArgument x:TypeArguments="x:String" x:Key="in_ModelSelection">[ModelSelection]</InArgument>
