@@ -151,7 +151,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="InstgramScreenshotAndSendToLLM" sap:VirtualizedContainerService.HintSize="1309,8399" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="InstgramScreenshotAndSendToLLM" sap:VirtualizedContainerService.HintSize="1168,8399" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="currentUrl" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_output" />
@@ -520,7 +520,7 @@
                                             </Assign>
                                             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="InstagramPreCondition - Invoke Workflow File (InstgramFiles\InstagramPreCondition.xaml)" sap:VirtualizedContainerService.HintSize="544,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_61" UnSafe="False" WorkflowFileName="InstgramFiles\InstagramPreCondition.xaml">
                                               <ui:InvokeWorkflowFile.Arguments>
-                                                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                                <InArgument x:TypeArguments="x:String" x:Key="in_Action">[in_Action]</InArgument>
                                               </ui:InvokeWorkflowFile.Arguments>
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
