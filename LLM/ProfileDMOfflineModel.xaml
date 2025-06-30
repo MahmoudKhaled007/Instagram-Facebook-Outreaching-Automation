@@ -124,7 +124,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ProfileDMOfflineModel" sap:VirtualizedContainerService.HintSize="1168,1502" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ProfileDMOfflineModel" sap:VirtualizedContainerService.HintSize="1583,1502" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="variable1" />
       <Variable x:TypeArguments="x:String" Name="ResponseMessage" />
@@ -143,6 +143,7 @@
         <Variable x:TypeArguments="sd:DataTable" Name="dtConfig" />
         <Variable x:TypeArguments="x:String" Name="imagePath" />
         <Variable x:TypeArguments="x:String" Name="folder" />
+        <Variable x:TypeArguments="x:String" Name="eror" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -150,10 +151,11 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim bytes As Byte() = System.IO.File.ReadAllBytes(filePath)&#xA;base64Image = Convert.ToBase64String(bytes)" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="470,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+      <ui:InvokeCode ContinueOnError="{x:Null}" Code="Try&#xA;Dim bytes As Byte() = System.IO.File.ReadAllBytes(filePath)&#xA;base64Image = Convert.ToBase64String(bytes)&#xA;Catch ex As Exception&#xA;    ' Log the error message&#xA; out_Message = &quot;Error: &quot; &amp; ex.Message&#xA;End Try" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="470,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
         <ui:InvokeCode.Arguments>
           <InArgument x:TypeArguments="x:String" x:Key="filePath">[in_ProfileimagePath]</InArgument>
           <OutArgument x:TypeArguments="x:String" x:Key="base64Image">[base64Image]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_Message">[eror]</OutArgument>
         </ui:InvokeCode.Arguments>
       </ui:InvokeCode>
       <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="470,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
@@ -199,7 +201,7 @@
 }"]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" Body="[jsonBody]" BodyFormat="application/json" DisplayName="MessageHTTP Request" EnableSSLVerification="True" EndPoint="http://localhost:11434/api/generate" sap:VirtualizedContainerService.HintSize="470,102" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" Result="[ResponseMessage]" StatusCode="[ResponseStatueMessage]" TimeoutMS="300000">
+      <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" Body="[jsonBody]" BodyFormat="application/json" DisplayName="MessageHTTP Request" EnableSSLVerification="True" EndPoint="http://localhost:11434/api/generate" sap:VirtualizedContainerService.HintSize="470,102" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" Result="[ResponseMessage]" StatusCode="[ResponseStatueMessage]" TimeoutMS="1000000">
         <ui:HttpClient.Attachments>
           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
         </ui:HttpClient.Attachments>

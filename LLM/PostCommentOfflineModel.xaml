@@ -117,7 +117,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PostCommentOfflineModel" sap:VirtualizedContainerService.HintSize="1309,2018" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="PostCommentOfflineModel" sap:VirtualizedContainerService.HintSize="1583,2018" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ResponseComment" />
       <Variable x:TypeArguments="x:Int32" Name="ResponseStatueComment" />
@@ -179,14 +179,14 @@
         </Assign.To>
         <Assign.Value>
           <InArgument x:TypeArguments="x:String" xml:space="preserve">["{
-    ""model"": ""gemma3:27b"",
+    ""model"": ""gemma3:12b"",
     ""prompt"": """ + in_postPrompt + """,
     ""stream"": false,
     ""images"": [""" + base64Image + """]
 }"]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" Body="[jsonBody]" BodyFormat="application/json" DisplayName="Comment HTTP Request" EnableSSLVerification="True" EndPoint="http://localhost:11434/api/generate" sap:VirtualizedContainerService.HintSize="470,102" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" Result="[ResponseComment]" StatusCode="[ResponseStatueComment]" TimeoutMS="300000">
+      <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" Body="[jsonBody]" BodyFormat="application/json" DisplayName="Comment HTTP Request" EnableSSLVerification="True" EndPoint="http://localhost:11434/api/generate" sap:VirtualizedContainerService.HintSize="470,102" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" Result="[ResponseComment]" StatusCode="[ResponseStatueComment]" TimeoutMS="1000000">
         <ui:HttpClient.Attachments>
           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
         </ui:HttpClient.Attachments>
