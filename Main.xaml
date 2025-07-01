@@ -90,15 +90,11 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="1309,2914" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="1168,2914" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtInstgramInput" />
       <Variable x:TypeArguments="sd:DataTable" Name="dtFacbookInput" />
-      <Variable x:TypeArguments="x:String" Name="ResponseType">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Nothing" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="[Nothing]" Name="ResponseType" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -170,7 +166,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="382,315" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Will you choose Message or Comment or Post" OptionsString="AI message and template comment; Template message and AI comment; No Template" Title="Choose Response Type">
+            <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="382,315" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Will you choose Message or Comment or Post" OptionsString="ai message and template comment; template message and ai comment; no template" Title="Choose Response Type">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[ResponseType]</OutArgument>
               </ui:InputDialog.Result>

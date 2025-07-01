@@ -130,7 +130,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="offline_model" sap:VirtualizedContainerService.HintSize="1583,2528" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="offline_model" sap:VirtualizedContainerService.HintSize="1168,2528" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ResponseMessage" />
       <Variable x:TypeArguments="x:Int32" Name="ResponseStatueMessage" />
@@ -1217,7 +1217,7 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </Assign>
                     </Sequence>
-                    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[in_ResponseType.ToLower]" sap:VirtualizedContainerService.HintSize="470,1046" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[in_ResponseType.ToLower.Trim]" sap:VirtualizedContainerService.HintSize="470,1046" sap2010:WorkflowViewState.IdRef="Switch`1_1">
                       <Switch.Default>
                         <Sequence DisplayName="Default" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_117">
                           <sap:WorkflowViewStateService.ViewState>
